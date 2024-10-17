@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Stattron</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20240120112629" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20240120112629">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__column">
+					<a href="home.html" class="header__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img class="img-fluid logo-desc" src="img/logo.png" alt=""></picture>
+						<picture><source srcset="img/logo_mob.webp" type="image/webp"><img class="img-fluid logo-mob" src="img/logo_mob.png" alt=""></picture>
+					</a>
+					<form action="#" class="header__search" method="POST">
+						<input placeholder="Поиск..." class="header__input" type="text">
+						<button class="header__search-btn" type="submit">
+							<img class="img-fluid" src="img/icons/search.svg" alt="">
+						</button>
+					</form>
+				</div>
+				<div class="header__column">
+					<div data-da=".header__container,767.98" data-dropdown class="header__dropdown dropdown-header">
+						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+							<div class="dropdown-header__btn dropdown-header__btn_desc">
+								<span>Сервисы</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</div>
+							<div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+								<span></span>
+							</div>
+						</button>
+						<div class="dropdown-header__list">
+							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span></span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="register.html" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>Регистрация</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/1.svg" alt="">
+									Каталог каналов
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/2.svg" alt="">
+									Поиск постов
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/3.svg" alt="">
+									Отслеживание постов
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/4.svg" alt="">
+									Мои каналы
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/5.svg" alt="">
+									Анализ аудитории
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/6.svg" alt="">
+									Telegraph-статьи
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/7.svg" alt="">
+									Детальная статистика
+								</span>
+							</a>
+
+							<button type="button" class="dropdown-header__option">Включить ночную тему</button>
+						</div>
+					</div>
+					<div class="header__btns">
+						<a href="register.html" class="header__btn button">Регистрация</a>
+						<a data-da=".dropdown-header__item span,767.98" href="sing-in.html" class="header__btn_no-bg">
+							Войти
+							<img src="img/icons/login.svg" alt="">
+						</a>
+					</div>
+					<div data-dropdown class="header__dropdown dropdown-header dropdown-header-lang">
+						<button data-dropdown-btn class="dropdown-header__btn" type="button">
+							<span>Ru</span>
+							<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+						</button>
+						<div class="dropdown-header-lang__list dropdown-header__list dropdown-header__list_lang">
+							<a href="#" class="dropdown-header-lang__item">En</a>
+							<a href="#" class="dropdown-header-lang__item">De</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="home-mainscreen">
+				<div class="home-mainscreen__container">
+					<h2 class="home-mainscreen__title title">ТОП активных телеграмм каналов</h2>
+					<ul class="home-mainscreen__list">
+						<li class="home-mainscreen__item item-mainscreen">
+							<div class="item-mainscreen__head">
+								<a href="#" target="_blank" class="item-mainscreen__img">
+									<picture><source srcset="img/home-mainscreen/1.webp" type="image/webp"><img class="img-fluid" src="img/home-mainscreen/1.png" alt=""></picture>
+								</a>
+								<div class="item-mainscreen__content">
+									<a href="#" target="_blank" class="item-mainscreen__title title hhv-blue title_w500">FUCKTЫ</a>
+									<div class="item-mainscreen__label label-grey">Факты</div>
+								</div>
+								<div class="item-mainscreen__info">
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/users-filling.svg" alt="">
+										3,451,556
+									</div>
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/eye.svg" alt="">
+										208,704
+									</div>
+								</div>
+							</div>
+							<a href="#" target="_blank" class="item-mainscreen__btn button button_no-bg">Подробнее</a>
+						</li>
+						<li class="home-mainscreen__item item-mainscreen">
+							<div class="item-mainscreen__head">
+								<a href="#" target="_blank" class="item-mainscreen__img">
+									<picture><source srcset="img/home-mainscreen/2.webp" type="image/webp"><img class="img-fluid" src="img/home-mainscreen/2.png" alt=""></picture>
+								</a>
+								<div class="item-mainscreen__content">
+									<a href="#" target="_blank" class="item-mainscreen__title title hhv-blue title_w500">Фильмы Сер..</a>
+									<div class="item-mainscreen__label label-grey">Кино, фильмы</div>
+								</div>
+								<div class="item-mainscreen__info">
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/users-filling.svg" alt="">
+										3,451,556
+									</div>
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/eye.svg" alt="">
+										208,704
+									</div>
+								</div>
+							</div>
+							<a href="#" target="_blank" class="item-mainscreen__btn button button_no-bg">Подробнее</a>
+						</li>
+						<li class="home-mainscreen__item item-mainscreen">
+							<div class="item-mainscreen__head">
+								<a href="#" target="_blank" class="item-mainscreen__img">
+									<picture><source srcset="img/home-mainscreen/3.webp" type="image/webp"><img class="img-fluid" src="img/home-mainscreen/3.png" alt=""></picture>
+								</a>
+								<div class="item-mainscreen__content">
+									<a href="#" target="_blank" class="item-mainscreen__title title hhv-blue title_w500">Игра в кальм..</a>
+									<div class="item-mainscreen__label label-grey">Кино, фильмы</div>
+								</div>
+								<div class="item-mainscreen__info">
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/users-filling.svg" alt="">
+										3,451,556
+									</div>
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/eye.svg" alt="">
+										208,704
+									</div>
+								</div>
+							</div>
+							<a href="#" target="_blank" class="item-mainscreen__btn button button_no-bg">Подробнее</a>
+						</li>
+						<li class="home-mainscreen__item item-mainscreen">
+							<div class="item-mainscreen__head">
+								<a href="#" target="_blank" class="item-mainscreen__img">
+									<picture><source srcset="img/home-mainscreen/4.webp" type="image/webp"><img class="img-fluid" src="img/home-mainscreen/4.png" alt=""></picture>
+								</a>
+								<div class="item-mainscreen__content">
+									<a href="#" target="_blank" class="item-mainscreen__title title hhv-blue title_w500">Telegram Tips</a>
+									<div class="item-mainscreen__label label-grey">Факты</div>
+								</div>
+								<div class="item-mainscreen__info">
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/users-filling.svg" alt="">
+										8.08m
+									</div>
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/eye.svg" alt="">
+										208,704
+									</div>
+								</div>
+							</div>
+							<a href="#" target="_blank" class="item-mainscreen__btn button button_no-bg">Подробнее</a>
+						</li>
+						<li class="home-mainscreen__item item-mainscreen">
+							<div class="item-mainscreen__head">
+								<a href="#" target="_blank" class="item-mainscreen__img">
+									<picture><source srcset="img/home-mainscreen/5.webp" type="image/webp"><img class="img-fluid" src="img/home-mainscreen/5.png" alt=""></picture>
+								</a>
+								<div class="item-mainscreen__content">
+									<a href="#" target="_blank" class="item-mainscreen__title title hhv-blue title_w500">КРИПТОВАЛ...</a>
+									<div class="item-mainscreen__label label-grey">Криптовалюта</div>
+								</div>
+								<div class="item-mainscreen__info">
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/users-filling.svg" alt="">
+										3,451,556
+									</div>
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/eye.svg" alt="">
+										208,704
+									</div>
+								</div>
+							</div>
+							<a href="#" target="_blank" class="item-mainscreen__btn button button_no-bg">Подробнее</a>
+						</li>
+						<li class="home-mainscreen__item item-mainscreen">
+							<div class="item-mainscreen__head">
+								<a href="#" target="_blank" class="item-mainscreen__img">
+									<picture><source srcset="img/home-mainscreen/6.webp" type="image/webp"><img class="img-fluid" src="img/home-mainscreen/6.png" alt=""></picture>
+								</a>
+								<div class="item-mainscreen__content">
+									<a href="#" target="_blank" class="item-mainscreen__title title hhv-blue title_w500">Факт дня</a>
+									<div class="item-mainscreen__label label-grey">Факты</div>
+								</div>
+								<div class="item-mainscreen__info">
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/users-filling.svg" alt="">
+										3,451,556
+									</div>
+									<div class="channel-count item-mainscreen__count label-blue label-blue_s20">
+										<img src="img/icons/eye.svg" alt="">
+										208,704
+									</div>
+								</div>
+							</div>
+							<a href="#" target="_blank" class="item-mainscreen__btn button button_no-bg">Подробнее</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="channels">
+				<div class="channels__container container-50p">
+					<div class="container-50p__item">
+						<div data-tabs class="channels-tabs">
+							<div class="tabs-head">
+								<h4 class="channels-tabs__title title">Новые подписчики</h4>
+								<nav data-tabs-titles class="tabs-navigation">
+									<button type="button" class="tabs-navigation__title _tab-active">Сегодня</button>
+									<button type="button" class="tabs-navigation__title">Вчера</button>
+									<button type="button" class="tabs-navigation__title">За неделю</button>
+								</nav>
+							</div>
+							<div data-tabs-body class="channels-tabs__content">
+								<div class="channels-tabs__body">
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/1.webp" type="image/webp"><img class="img-fluid" src="img/channels/1.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">Принцессы тиндера</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+12,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/2.webp" type="image/webp"><img class="img-fluid" src="img/channels/2.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">TON NFT | Animals Red List</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+6,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/3.webp" type="image/webp"><img class="img-fluid" src="img/channels/3.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">Уголок психологии</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+15,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/4.webp" type="image/webp"><img class="img-fluid" src="img/channels/4.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">Топор Live</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+7,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/5.webp" type="image/webp"><img class="img-fluid" src="img/channels/5.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">Рифмы и панчи</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+10,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/6.webp" type="image/webp"><img class="img-fluid" src="img/channels/6.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">СВЕЖАК</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+13,556</div>
+									</div>
+									<div class="channel-tabs-channels__btn-wrap">
+										<button class="channel-tabs-channels__btn button" type="button">Посмотреть все</button>
+									</div>
+								</div>
+								<div class="channels-tabs__body">
+									Содержимое второго таба
+								</div>
+								<div class="channels-tabs__body">
+									Содержимое третьего таба
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-50p__item">
+						<div data-tabs class="channels-tabs">
+							<div class="tabs-head">
+								<h4 class="channels-tabs__title title">Просмотры/Подписчики</h4>
+								<nav data-tabs-titles class="tabs-navigation">
+									<button type="button" class="tabs-navigation__title _tab-active">Сегодня</button>
+									<button type="button" class="tabs-navigation__title">Вчера</button>
+								</nav>
+							</div>
+							<div data-tabs-body class="channels-tabs__content">
+								<div class="channels-tabs__body">
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/1.webp" type="image/webp"><img class="img-fluid" src="img/channels/1.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">Принцессы тиндера</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+12,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/2.webp" type="image/webp"><img class="img-fluid" src="img/channels/2.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">TON NFT | Animals Red List</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+6,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/3.webp" type="image/webp"><img class="img-fluid" src="img/channels/3.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">Уголок психологии</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+15,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/4.webp" type="image/webp"><img class="img-fluid" src="img/channels/4.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">Топор Live</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+7,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/5.webp" type="image/webp"><img class="img-fluid" src="img/channels/5.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">Рифмы и панчи</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+10,556</div>
+									</div>
+									<div class="channel-tabs-channels">
+										<a href="#" target="_blank" class="channel-tabs-channels__img">
+											<picture><source srcset="img/channels/6.webp" type="image/webp"><img class="img-fluid" src="img/channels/6.png" alt=""></picture>
+										</a>
+										<div class="channel-tabs-channels__content">
+											<a href="#" class="channel-tabs-channels__title title title_s20">СВЕЖАК</a>
+											<div class="channel-count label-grey">
+												<img src="img/icons/users-filling.svg" alt="">
+												3,451,556
+											</div>
+										</div>
+										<div class="label-blue">+13,556</div>
+									</div>
+									<div class="channel-tabs-channels__btn-wrap">
+										<button class="channel-tabs-channels__btn button" type="button">Посмотреть все</button>
+									</div>
+								</div>
+								<div class="channels-tabs__body">
+									Содержимое второго таба
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="charts">
+				<div class="charts__container container-50p">
+					<div class="container-50p__item">
+						<div data-tabs class="charts-tabs">
+							<div class="tabs-head">
+								<h4 class="channels-tabs__title title">Рекламных записей по дням</h4>
+								<nav data-tabs-titles class="tabs-navigation">
+									<button type="button" class="tabs-navigation__title _tab-active">1 месяц</button>
+									<button type="button" class="tabs-navigation__title">3 месяца</button>
+									<button type="button" class="tabs-navigation__title">6 месяцев</button>
+								</nav>
+							</div>
+							<div data-tabs-body class="charts-tabs__content">
+								<div class="charts-tabs__body">
+									<div class="charts-tabs__chart">
+										<canvas id="chart1"></canvas>
+									</div>
+									<div class="charts-tabs__info">
+										<div class="charts-tabs__info-item">
+											<div class="label-black">Рекламных постов в базе</div>
+											<div class="label-blue label-blue_s24">144,989,805</div>
+										</div>
+										<div class="charts-tabs__info-item">
+											<div class="label-black">Опубликованно сегодня</div>
+											<div class="label-blue label-blue_s24">+9,414</div>
+										</div>
+									</div>
+								</div>
+								<div class="charts-tabs__body">
+									<div class="charts-tabs__chart">
+										<canvas id="chart2"></canvas>
+									</div>
+									<div class="charts-tabs__info">
+										<div class="charts-tabs__info-item">
+											<div class="label-black">Рекламных постов в базе</div>
+											<div class="label-blue label-blue_s24">144,989,805</div>
+										</div>
+										<div class="charts-tabs__info-item">
+											<div class="label-black">Опубликованно сегодня</div>
+											<div class="label-blue label-blue_s24">+9,414</div>
+										</div>
+									</div>
+								</div>
+								<div class="charts-tabs__body">
+									<div class="charts-tabs__chart">
+										<canvas id="chart3"></canvas>
+									</div>
+									<div class="charts-tabs__info">
+										<div class="charts-tabs__info-item">
+											<div class="label-black">Рекламных постов в базе</div>
+											<div class="label-blue label-blue_s24">144,989,805</div>
+										</div>
+										<div class="charts-tabs__info-item">
+											<div class="label-black">Опубликованно сегодня</div>
+											<div class="label-blue label-blue_s24">+9,414</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-50p__item">
+						<div data-tabs class="charts-tabs">
+							<div class="tabs-head">
+								<h4 class="channels-tabs__title title">Публикаций по часам, %</h4>
+								<nav data-tabs-titles class="tabs-navigation">
+									<button type="button" class="tabs-navigation__title _tab-active" style="display: none;">1 месяц</button>
+								</nav>
+							</div>
+							<div data-tabs-body class="charts-tabs__content">
+								<div class="charts-tabs__body">
+									<div class="charts-tabs__chart">
+										<canvas id="chart4"></canvas>
+									</div>
+									<div class="charts-tabs__info">
+										<div class="charts-tabs__info-item charts-tabs__info-item_auto">
+											<div class="label-black">Всего публикаций</div>
+											<div class="label-blue label-blue_s24">144,989,805</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__list">
+					<ul class="footer__list footer__list_sub">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Stattron</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">О проекте</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Напишите нам</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Пользовательское соглашение сервиса Stattron</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Правила пользования</a>
+						</li>
+					</ul>
+					<div data-da=".footer,992.98" class="footer__copy">2019-2022 ©Stattron</div>
+				</div>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Сообщество</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Блог</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Исследование рынка рекламы</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Наш Telegram-канал</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Партнерская программа</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Владельцам каналов</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Отзывы о Telega.in</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">База знаний</a>
+					</li>
+				</ul>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Помощь</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">FAQ</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Поддержка</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js?_v=20240120112629"></script>
+	<script src="js/app.min.js?_v=20240120112629"></script>
+</body>
+
+</html>

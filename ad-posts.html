@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Stattron | Рекламные посты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20240120112629" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20240120112629">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__column">
+					<a href="home.html" class="header__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img class="img-fluid logo-desc" src="img/logo.png" alt=""></picture>
+						<picture><source srcset="img/logo_mob.webp" type="image/webp"><img class="img-fluid logo-mob" src="img/logo_mob.png" alt=""></picture>
+					</a>
+					<form action="#" class="header__search" method="POST">
+						<input placeholder="Поиск..." class="header__input" type="text">
+						<button class="header__search-btn" type="submit">
+							<img class="img-fluid" src="img/icons/search.svg" alt="">
+						</button>
+					</form>
+				</div>
+				<div class="header__column">
+					<div data-da=".header__container,767.98" data-dropdown class="header__dropdown dropdown-header">
+						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+							<div class="dropdown-header__btn dropdown-header__btn_desc">
+								<span>Сервисы</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</div>
+							<div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+								<span></span>
+							</div>
+						</button>
+						<div class="dropdown-header__list">
+							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span></span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="register.html" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>Регистрация</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/1.svg" alt="">
+									Каталог каналов
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/2.svg" alt="">
+									Поиск постов
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/3.svg" alt="">
+									Отслеживание постов
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/4.svg" alt="">
+									Мои каналы
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/5.svg" alt="">
+									Анализ аудитории
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/6.svg" alt="">
+									Telegraph-статьи
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/7.svg" alt="">
+									Детальная статистика
+								</span>
+							</a>
+
+							<button type="button" class="dropdown-header__option">Включить ночную тему</button>
+						</div>
+					</div>
+					<div class="header__btns">
+						<a href="register.html" class="header__btn button">Регистрация</a>
+						<a data-da=".dropdown-header__item span,767.98" href="sing-in.html" class="header__btn_no-bg">
+							Войти
+							<img src="img/icons/login.svg" alt="">
+						</a>
+					</div>
+					<div data-dropdown class="header__dropdown dropdown-header dropdown-header-lang">
+						<button data-dropdown-btn class="dropdown-header__btn" type="button">
+							<span>Ru</span>
+							<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+						</button>
+						<div class="dropdown-header-lang__list dropdown-header__list dropdown-header__list_lang">
+							<a href="#" class="dropdown-header-lang__item">En</a>
+							<a href="#" class="dropdown-header-lang__item">De</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="search">
+				<div class="search__container">
+					<form action="#" class="search-form form" method="POST">
+						<div class="search-form__column search-form__column_1">
+							<div class="search-form__item">
+								<label for="channel" class="label-black">Упоминаемый канал:</label>
+								<input type="text" id="channel" name="channel" placeholder="взлом маркетинга" class="form__input">
+							</div>
+							<div class="search-form__item">
+								<label for="word-or-phrase" class="label-black">Слово или фраза в тексте:</label>
+								<input type="text" id="word-or-phrase" name="word-or-phrase" placeholder="маркетинг" class="form__input">
+							</div>
+						</div>
+						<div class="search-form__column search-form__column_2">
+							<div class="search-form__item">
+								<label for="channel-for-search" class="label-black">Канал для поиска:</label>
+								<input type="text" id="channel-for-search" name="channel-for-search" placeholder="young Trader" class="form__input">
+							</div>
+							<div class="search-form__item">
+								<label for="period" class="label-black">За период:</label>
+								<input data-datepicker type="text" id="period" name="period" placeholder="23-04-2021 - 19-11-2022" class="form__input">
+								<img class="search-form__calendar" src="img/analitics/calendar.svg" alt="">
+							</div>
+						</div>
+						<div data-da=".search-form__column_1,992.98" class="search-form__column">
+							<div class="search-form__item search-form__item_select">
+								<div class="search-form__item-content">
+									<div class="search-form__item">
+										<label for="text-search" class="label-black">Тип поиска по тексту:</label>
+										<select name="text-search" id="text-search" data-class-modif="custom-select">
+											<option value="1" selected>По всему тексту</option>
+											<option value="2">По всему тексту 1</option>
+											<option value="3">По всему тексту 2</option>
+											<option value="4">По всему тексту 3</option>
+										</select>
+									</div>
+									<div class="search-form__item">
+										<label for="sort" class="label-black">Сортировка:</label>
+										<select name="sort" id="sort" data-class-modif="custom-select">
+											<option value="1" selected>Дата добавления</option>
+											<option value="2">Дата добавления 1</option>
+											<option value="3">Дата добавления 2</option>
+											<option value="4">Дата добавления 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div data-da=".search-form__column_2,992.98" class="search-form__item search-form__item_center">
+								<label for="view-from" class="label-black search-form__label">Просмотров:</label>
+								<div class="search-form__item-content search-form__item-content_center">
+									<label for="view-from" class="label-black">От</label>
+									<input type="number" id="view-from" name="view-from" placeholder="1000" class="form__input">
+									<label for="view-to" class="label-black">До</label>
+									<input type="number" id="view-to" name="view-to" placeholder="4,570" class="form__input">
+								</div>
+							</div>
+						</div>
+						<div data-da=".search-form__column_2,992.98" class="search-form__column search-form__column_btn">
+							<button class="button" type="submit">Найти записи</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="ad-posts">
+				<div class="ad-posts__container">
+					<div class="search-channels__head ad-posts__head">
+						<div class="search-channels__tabs-head">
+							<div class="search-channels__nums tabs-navigation">
+								<button class="search-channels__num tabs-navigation__title _tab-active" type="button">1</button>
+								<button class="search-channels__num tabs-navigation__title" type="button">2</button>
+								<button class="search-channels__num tabs-navigation__title" type="button">3</button>
+								<button class="search-channels__num tabs-navigation__title" type="button">...</button>
+								<button class="search-channels__num tabs-navigation__title" type="button">1956</button>
+							</div>
+							<div class="search-channels__head-text">
+								Найдено <span>121,456</span> поста
+							</div>
+						</div>
+					</div>
+					<div class="ad-posts__list">
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture><source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid" src="img/channels/7.png" alt=""></picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">young 💸Trader💸</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture><source srcset="img/icons/icon-img.webp" type="image/webp"><img src="img/icons/icon-img.png" alt=""></picture>
+								Изображение
+							</button>
+						</div>
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture><source srcset="img/channels/8.webp" type="image/webp"><img class="img-fluid" src="img/channels/8.png" alt=""></picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">Дудь </div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture><source srcset="img/icons/icon-video.webp" type="image/webp"><img src="img/icons/icon-video.png" alt=""></picture>
+								Изображение
+							</button>
+						</div>
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture><source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid" src="img/channels/7.png" alt=""></picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">young 💸Trader💸</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture><source srcset="img/icons/icon-img.webp" type="image/webp"><img src="img/icons/icon-img.png" alt=""></picture>
+								Изображение
+							</button>
+						</div>
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture><source srcset="img/channels/9.webp" type="image/webp"><img class="img-fluid" src="img/channels/9.png" alt=""></picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">young 💸Trader💸</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture><source srcset="img/icons/icon-img.webp" type="image/webp"><img src="img/icons/icon-img.png" alt=""></picture>
+								Изображение
+							</button>
+						</div>
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture><source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid" src="img/channels/7.png" alt=""></picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">young 💸Trader💸</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture><source srcset="img/icons/icon-img.webp" type="image/webp"><img src="img/icons/icon-img.png" alt=""></picture>
+								Изображение
+							</button>
+						</div>
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture><source srcset="img/channels/10.webp" type="image/webp"><img class="img-fluid" src="img/channels/10.png" alt=""></picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">young 💸Trader💸</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture><source srcset="img/icons/icon-img.webp" type="image/webp"><img src="img/icons/icon-img.png" alt=""></picture>
+								Изображение
+							</button>
+						</div>
+					</div>
+					<div class="ad-posts__list ad-posts__list_center">
+						<div class="ad-posts__item">
+							<p class="text">
+								К сожалению вам недоступен просмотр остальных постов, поскольку у вашего аккаунта демонстрационный режим. Чтобы снять ограничения и получить доступ ко всем возможностям сервиса оформите подписку.
+							</p>
+							<a href="#" class="button">Оформить подписку</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__list">
+					<ul class="footer__list footer__list_sub">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Stattron</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">О проекте</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Напишите нам</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Пользовательское соглашение сервиса Stattron</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Правила пользования</a>
+						</li>
+					</ul>
+					<div data-da=".footer,992.98" class="footer__copy">2019-2022 ©Stattron</div>
+				</div>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Сообщество</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Блог</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Исследование рынка рекламы</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Наш Telegram-канал</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Партнерская программа</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Владельцам каналов</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Отзывы о Telega.in</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">База знаний</a>
+					</li>
+				</ul>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Помощь</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">FAQ</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Поддержка</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js?_v=20240120112629"></script>
+	<script src="js/app.min.js?_v=20240120112629"></script>
+</body>
+
+</html>
