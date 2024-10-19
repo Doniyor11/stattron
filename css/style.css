@@ -3635,6 +3635,29 @@ td {
   margin-bottom: 1.25rem;
 }
 
+.amount__input-box {
+  position: relative;
+}
+
+.amount__input-box::after {
+  content: "₽";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, -0.5px);
+  border-radius: 0 20px 20px 0;
+  background: #FFF;
+  padding: 1.25rem 1.4375rem;
+}
+
+.amount__input-box>.form__input {
+  padding-right: 3.75rem;
+}
+
 .payment__service-btns {
   margin-top: 2rem;
   display: -webkit-box;
@@ -3659,7 +3682,7 @@ td {
   width: 100%;
   border-radius: 20px;
   background: linear-gradient(360deg, #4180C6 0%, #2C96EA 100%);
-  padding: 2.5rem 3.25rem;
+  padding: 2.5rem 2rem 1.825rem;
 }
 
 .plans__box-white {
@@ -3672,13 +3695,20 @@ td {
   flex-direction: column;
 }
 
+.plans__box-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 1.45rem;
+}
+
 .plans__box-title {
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 3.75rem;
   text-align: left;
   color: #fff;
-  margin-bottom: 2rem;
 }
 
 .plans__box-white .plans__box-title {
@@ -3690,6 +3720,7 @@ td {
   align-items: start;
   column-gap: 1.5rem;
   margin-bottom: 2.75rem;
+  padding: 0 1.45rem;
 }
 
 .plans__box-image {
@@ -3714,27 +3745,26 @@ td {
 }
 
 .plans__box-btn {
-  width: 100%;
   display: block;
-  padding: 1.5rem;
-  border: 3px solid transparent;
-  border-radius: 1rem;
-  background-color: #fff;
+  padding: 1.25rem 2.25rem 1rem;
+  border-radius: 1.125rem;
   text-align: center;
+  background: #EA872C;
+  transform: translate(2rem, -1rem);
 }
 
 .just_price {
   font-size: 1.8rem;
   font-weight: 800;
   line-height: 2.25rem;
-  color: #2C96EA;
+  color: #fff;
 }
 
 .old_price {
   font-size: 1.325rem;
   font-weight: 800;
   line-height: 2.125rem;
-  color: #2C96EA;
+  color: #fff;
   position: relative;
   top: -1rem;
 }
@@ -3774,6 +3804,54 @@ td {
   margin-top: auto;
 }
 
+.plans__box-month-plans {
+  padding: 0.8rem 1rem 0.8rem 1.625rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.small-w {
+  max-width: 14.125rem;
+}
+
+.plans__box-monthTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.plans__box-monthDesc {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: left;
+  color: #2C96EA;
+}
+
+.plans__box-monthDesc span {
+  margin-left: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #00000099;
+  text-decoration: line-through;
+}
+
+.plans__box-monthBtn {
+  border-radius: 0.75rem;
+  padding: 0.825rem 1.625rem;
+  background: #2C96EA;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
 /* payment-option page style started */
 .payment-option {
   min-height: 100vh;
@@ -3805,6 +3883,10 @@ td {
 }
 
 @media (max-width: 1199.99px) {
+  .plans {
+    padding: 0 4rem;
+  }
+
   .plans__boxes {
     flex-wrap: wrap;
   }
@@ -3812,9 +3894,17 @@ td {
   .plans__box-blue {
     margin-bottom: 2.5rem;
   }
+
+  .plans__box-btn {
+    padding: 20px 35px 16px;
+  }
 }
 
 @media (max-width: 991.99px) {
+  .plans {
+    padding: 0 2rem;
+  }
+
   .item-popup__channel-info {
     row-gap: 0.6rem;
   }
@@ -3825,19 +3915,51 @@ td {
 }
 
 @media (max-width: 767.99px) {
+  .plans {
+    padding: 0 1rem;
+  }
+  .plans__box-btn {
+    padding: 16px 28px 13px;
+    transform: none;
+  }
+  
+  .just_price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.25rem;
+    color: #fff;
+  }
+  
+  .old_price {
+    font-size: 1.325rem;
+    font-weight: 800;
+    line-height: 2.125rem;
+    color: #fff;
+    position: relative;
+    top: -1rem;
+  }
+
   .payment-container {
     max-width: 510px;
   }
 }
 
 @media (max-width: 575.99px) {
+  .plans {
+    padding: 0;
+  }
   .payment-container {
     width: 100%;
     padding: 0 2.5rem;
   }
 
+  .payment__service {
+    column-gap: 0.5rem;
+  }
+
   .payment__service-btns {
     flex-wrap: wrap;
+    flex-direction: column-reverse;
     column-gap: 0;
     row-gap: 0.5rem;
   }
@@ -3848,7 +3970,12 @@ td {
 
   .payment-option-boxes {
     flex-wrap: wrap;
-    row-gap: 1.625rem;
+    row-gap: 1.25rem;
+  }
+
+  .payment-option-image {
+    object-fit: cover;
+    aspect-ratio: 18/9;
   }
 
   .item-popup__channel-info {
@@ -3857,6 +3984,15 @@ td {
 
   .item-popup__channel-infoBox {
     width: 100%;
+  }
+
+  #popup-analysis .item-popup__img {
+    width: 7rem;
+    margin: 0 auto;
+  }
+
+  #popup-analysis .item-popup__head {
+    align-items: center;
   }
 }
 
