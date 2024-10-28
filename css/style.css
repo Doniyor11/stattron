@@ -1127,6 +1127,10 @@ body::after {
   margin-bottom: 20px;
 }
 
+.button_analytics:hover{
+  color: #fff !important;
+}
+
 .text_fw500 {
   font-weight: 600;
 }
