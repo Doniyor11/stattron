@@ -126,25 +126,19 @@
 						<div class="dynamic-analitics__content">
 							<div>
 								<p class="text text_s20">
-									В этом разделе вы можете подписаться на уведомления в ваш Телеграм о появлении новых публикаций с упоминанием вашего бренда\аккаунта или любого слова\фразы.
-								</p>
-								<p class="text text_s20">
-									Поскольку у вас неоплаченный аккаунт, для вас действует лимит на 2 одновременно запущенных отслеживаний. Чтобы поднять лимит до 15, оплатите подписку.
+									В этом разделе вы можете подписаться на уведомления в ваш Telegram о появлении новых публикаций с упоминанием вашего бренда\аккаунта
+									или любого слова\фразы.
 								</p>
 								<p class="text text_s20">
 									После окончания подписки все ваши уведомления будут приостановлены.
 								</p>
-							</div>
-							<div>
-								<p class="tex text_s20">
-									Для того, чтобы настроить уведомления, нажмите кнопку ниже и в появившемся диалоге с ботом нажмите <span class="text_fw500">START</span>, затем обновите на эту страницу.
+								<p class="text text_s20">
+									Уведомления будут отправляться на телеграм-аккаунт <a href="" target="_blank" class="text_fw500 hhv-blue">username</a> <button class="button" type="button">Отвязать</button>
 								</p>
-							</div>
-							<div class="btn-wrap">
-								<button class="button" type="button">Авторизоваться с помощью Telegram</button>
 							</div>
 						</div>
 					</div>
+				</div>
 			</section>
 			<section class="tracking-form">
 				<div class="tracking-form__container">
@@ -174,22 +168,60 @@
 			<section class="last-messages">
 				<div class="last-messages__container">
 					<h2 class="title">Последние уведомления</h2>
-					<div class="last-messages__list">
-						<div class="last-messages__item">
-							<h4 class="label-black">Фраза или канал</h4>
-						</div>
-						<div class="last-messages__item">
-							<h4 class="label-black">Ссылка</h4>
-						</div>
-						<div class="last-messages__item">
-							<h4 class="label-black">Где</h4>
-						</div>
-						<div class="last-messages__item">
-							<h4 class="label-black">Дата</h4>
-						</div>
-						<div class="last-messages__item">
-							<h4 class="label-black">Обнаружено</h4>
-						</div>
+					<div class="analitics-tabs__table-wrap-container">
+						<table class="table search-channels__table">
+							<thead>
+							<tr class="tabs__account-head-column">
+								<th scope="col">
+									<div class="label-black text-left">Фраза или канал</div>
+								</th>
+								<th scope="col">
+									<div class="label-black text-left">Ссылка</div>
+								</th>
+								<th scope="col">
+									<div class="label-black text-left">Дата</div>
+								</th>
+								<th scope="col">
+									<div class="label-black text-left">Обнаружено</div>
+								</th>
+								<th scope="col">
+
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td scope="row">
+									<div class="tabs__account-date-time ">
+										<span>Топор</span>
+									</div>
+								</td>
+								<td>
+									<a href="https://t.me/te.me/topor_hard" target="_blank" class="text_fw500 hhv-blue">te.me/topor_hard</a>
+								</td>
+								<td>
+									<div class="label-blue label-blue_s20"></div>
+									<div class="tabs__account-date-time">
+										<span>22.05.2024</span>
+										<span>18:32:12</span>
+									</div>
+								</td>
+								<td>
+									<div class="label-blue label-blue_s20 text-left">3</div>
+								</td>
+								<td class="text-right">
+									<div>
+										<button onclick="toggleIcon(this)">
+											<img src="img/tracking-posts/material-symbols_stop.svg" alt="icon" class="icon">
+										</button>
+										<button>
+											<img src="img/tracking-posts/material-symbols_delete-outline.svg" alt="icon"/>
+										</button>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</section>
@@ -403,6 +435,7 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js?_v=20240120112629"></script>
 	<script src="js/app.min.js?_v=20240120112629"></script>
+	<script src="js/custom.js"></script>
 </body>
 
 </html>

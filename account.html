@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20240120112629" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20240120112629"
+		rel="stylesheet">
 
 	<link rel="stylesheet" href="css/style.min.css?_v=20240120112629">
 	<link rel="shortcut icon" href="favicon.ico">
@@ -20,8 +21,14 @@
 			<div class="header__container">
 				<div class="header__column">
 					<a href="home.html" class="header__logo">
-						<picture><source srcset="img/logo.webp" type="image/webp"><img class="img-fluid logo-desc" src="img/logo.png" alt=""></picture>
-						<picture><source srcset="img/logo_mob.webp" type="image/webp"><img class="img-fluid logo-mob" src="img/logo_mob.png" alt=""></picture>
+						<picture>
+							<source srcset="img/logo.webp" type="image/webp"><img class="img-fluid logo-desc"
+								src="img/logo.png" alt="">
+						</picture>
+						<picture>
+							<source srcset="img/logo_mob.webp" type="image/webp"><img class="img-fluid logo-mob"
+								src="img/logo_mob.png" alt="">
+						</picture>
 					</a>
 					<form action="#" class="header__search" method="POST">
 						<input placeholder="Поиск..." class="header__input" type="text">
@@ -55,26 +62,37 @@
 									<img src="img/header/1.svg" alt="">
 									Каталог каналов
 								</span>
-								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 							</a>
 							<a href="#" class="dropdown-header__item">
 								<span>
 									<img src="img/header/2.svg" alt="">
 									Поиск постов
 								</span>
-								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 							</a>
-							<a href="#" class="dropdown-header__item">
+							<a href="#" class="dropdown-header__item item-type-1">
 								<span>
 									<img src="img/header/3.svg" alt="">
 									Отслеживание постов
 								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 							</a>
-							<a href="#" class="dropdown-header__item">
+							<ul class="dropdown-header__sublist">
+								<li>
+									<a class="dropdown-header__sublist-link" href="#">Рекламные посты</a>
+								</li>
+								<li>
+									<a class="dropdown-header__sublist-link" href="#">Посты в закладках</a>
+								</li>
+								<li>
+									<a class="dropdown-header__sublist-link" href="#">Все посты</a>
+								</li>
+							</ul>
+							<a href="#" class="dropdown-header__item item-type-1">
 								<span>
 									<img src="img/header/4.svg" alt="">
 									Мои каналы
 								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 							</a>
 							<a href="#" class="dropdown-header__item">
 								<span>
@@ -98,7 +116,8 @@
 							<button type="button" class="dropdown-header__option">Включить ночную тему</button>
 						</div>
 					</div>
-					<div data-da=".header__container,767.98" data-dropdown class="header__dropdown dropdown-header dropdown-header_tablet-dn">
+					<div data-da=".header__container,767.98" data-dropdown
+						class="header__dropdown dropdown-header dropdown-header_tablet-dn">
 						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
 							<div class="dropdown-header__btn dropdown-header__btn_desc">
 								<span>Демо-доступ</span>
@@ -109,63 +128,23 @@
 							</div>
 						</button>
 						<div class="dropdown-header__list">
-							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
-								<span></span>
-								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
-							</a>
-							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
-								<span>Регистрация</span>
-								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
-							</a>
-							<a href="#" class="dropdown-header__item">
-								<span>
-									<img src="img/header/1.svg" alt="">
-									Каталог каналов
-								</span>
-								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
-							</a>
-							<a href="#" class="dropdown-header__item">
-								<span>
-									<img src="img/header/2.svg" alt="">
-									Поиск постов
-								</span>
-								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
-							</a>
-							<a href="#" class="dropdown-header__item">
-								<span>
-									<img src="img/header/3.svg" alt="">
-									Отслеживание постов
-								</span>
-							</a>
-							<a href="#" class="dropdown-header__item">
-								<span>
-									<img src="img/header/4.svg" alt="">
-									Мои каналы
-								</span>
-							</a>
-							<a href="#" class="dropdown-header__item">
-								<span>
-									<img src="img/header/5.svg" alt="">
-									Анализ аудитории
-								</span>
-							</a>
-							<a href="#" class="dropdown-header__item">
-								<span>
-									<img src="img/header/6.svg" alt="">
-									Telegraph-статьи
-								</span>
-							</a>
-							<a href="#" class="dropdown-header__item">
-								<span>
-									<img src="img/header/7.svg" alt="">
-									Детальная статистика
-								</span>
-							</a>
-
-							<button type="button" class="dropdown-header__option">Включить ночную тему</button>
+							<div class="subscribe-window">
+								<h2 class="subscribe-window__title">Бесплатный режим</h2>
+								<p class="subscribe-window__text">
+									У вас ограничен функционал !
+								</p>
+								<p class="subscribe-window__text">
+									Для улучшения возможностей аккаунта,
+									приобретите подписку на сервис.
+								</p>
+								<a href="#" class="button subscribe-window__btn">
+									Оформить подписку
+								</a>
+							</div>
 						</div>
 					</div>
-					<div data-da=".header__container,767.98" data-dropdown class="header__dropdown dropdown-header dropdown-header_tablet-dn">
+					<div data-da=".header__container,767.98" data-dropdown
+						class="header__dropdown dropdown-header dropdown-header_tablet-dn">
 						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
 							<div class="dropdown-header__btn dropdown-header__btn_desc">
 								<span>Баланс</span>
@@ -242,10 +221,14 @@
 							<a href="#" class="dropdown-header-lang__item">De</a>
 						</div>
 					</div>
-					<div data-da=".header__container,767.98" data-dropdown class="header__dropdown dropdown-header dropdown-header_mobi-dn">
+					<div data-da=".header__container,767.98" data-dropdown
+						class="header__dropdown dropdown-header dropdown-header_mobi-dn">
 						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
 							<div class="dropdown-header__btn dropdown-header__btn_desc">
-								<picture><source srcset="img/account/1.webp" type="image/webp"><img class="dropdown-header__avatar" src="img/account/1.png" alt=""></picture>
+								<picture>
+									<source srcset="img/account/1.webp" type="image/webp"><img
+										class="dropdown-header__avatar" src="img/account/1.png" alt="">
+								</picture>
 								<img class="dropdown-header__icon arrow" src="img/icons/arrow-down.svg" alt="">
 							</div>
 							<div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
@@ -255,7 +238,10 @@
 						<div class="dropdown-header__list dropdown-header__list_account">
 							<div class="dropdown-header__head">
 								<a href="#" class="dropdown-header__head-avatar">
-									<picture><source srcset="img/account/1.webp" type="image/webp"><img class="img-fluid" src="img/account/1.png" alt=""></picture>
+									<picture>
+										<source srcset="img/account/1.webp" type="image/webp"><img class="img-fluid"
+											src="img/account/1.png" alt="">
+									</picture>
 								</a>
 								<div class="dropdown-header__head-content">
 									<div class="dropdown-header__head-email">nikitalarionov2001@mail.ru</div>
@@ -308,7 +294,10 @@
 							<div class="info-account__head">
 								<div class="info-account__img-wrap">
 									<div class="info-account__img">
-										<picture><source srcset="img/account/1.webp" type="image/webp"><img class="img-fluid" src="img/account/1.png" alt=""></picture>
+										<picture>
+											<source srcset="img/account/1.webp" type="image/webp"><img class="img-fluid"
+												src="img/account/1.png" alt="">
+										</picture>
 									</div>
 									<button class="info-account__label hhv-blue" type="button">Сменить фото</button>
 								</div>
@@ -340,12 +329,14 @@
 								</div>
 							</div>
 							<div class="text">
-								Реферальный баланс, полученый за привлечение пользователей, вы можете потратить на продление премиум-доступа либо вывести на qiwi-кошелек.
+								Реферальный баланс, полученый за привлечение пользователей, вы можете потратить на
+								продление премиум-доступа либо вывести на qiwi-кошелек.
 							</div>
 						</div>
 						<div class="info-account__item info-account__item_text">
 							<p class="text">
-								Чтобы снять все ограничения - <a href="#" class="red">приобретите полный доступ </a>ко всем возможностями сервиса без ограничений.
+								Чтобы снять все ограничения - <a href="#" class="red">приобретите полный доступ </a>ко
+								всем возможностями сервиса без ограничений.
 							</p>
 						</div>
 					</div>
@@ -371,7 +362,8 @@
 								<form action="#" class="form" method="POST">
 									<div class="search-form__item">
 										<label for="qiwi" class="label-black">QIWI кошелек для выплат:</label>
-										<input type="text" id="qiwi" name="qiwi" placeholder="Введите qiwi" class="form__input">
+										<input type="text" id="qiwi" name="qiwi" placeholder="Введите qiwi"
+											class="form__input">
 									</div>
 								</form>
 							</div>
@@ -385,15 +377,18 @@
 						<form action="#" class="form form-pass" method="POST">
 							<div class="search-form__item">
 								<label for="current-pass" class="label-black">Введите текущий пароль:</label>
-								<input type="text" id="current-pass" name="current-pass" placeholder="Текущий пароль" class="form__input">
+								<input type="text" id="current-pass" name="current-pass" placeholder="Текущий пароль"
+									class="form__input">
 							</div>
 							<div class="search-form__item">
 								<label for="new-pass" class="label-black">Введите новый пароль:</label>
-								<input type="text" id="new-pass" name="new-pass" placeholder="Текущий пароль" class="form__input">
+								<input type="text" id="new-pass" name="new-pass" placeholder="Текущий пароль"
+									class="form__input">
 							</div>
 							<div class="search-form__item">
 								<label for="new-pass-repeat" class="label-black">Повторите новый пароль:</label>
-								<input type="text" id="new-pass-repeat" name="new-pass-repeat" placeholder="Текущий пароль" class="form__input">
+								<input type="text" id="new-pass-repeat" name="new-pass-repeat"
+									placeholder="Текущий пароль" class="form__input">
 							</div>
 							<button class="button" type="button">Изменить</button>
 						</form>
@@ -424,60 +419,391 @@
 						</div>
 						<div data-tabs-body class="tabs-account__content">
 							<div class="tabs-account__body">
-								<p class="text">
-									Наш сервис предлагает вам зарабатывать вместе с нами! <br> Основные правила и принципы реферальной программы просты:
-								</p>
-								<ul class="tabs-account__list">
-									<li class="tabs-account__item tabs-account__item_ok">
-										Вы будете получать 10% от суммы трат пользователей, зарегистрировавшихся по вашим реферальным ссылкам, на продление доступа.
-									</li>
-									<li class="tabs-account__item tabs-account__item_ok">
-										При условии хорошего количества оплат от вас мы можем увеличить ваш процент. Все условия индивидуальны и обсуждаются через поддержку.
-									</li>
-									<li class="tabs-account__item tabs-account__item_ok">
-										Как только пользователь регистрируется по вашей ссылке, он будет закреплен за вами навсегда - и вы будете получать свою комиссию с каждой оплаты пользователя за продление доступа к сервису.
-									</li>
-									<li class="tabs-account__item tabs-account__item_warning">
-										Запрещен спам в любых его проявлениях. За это - бан всего аккаунта без выплат.
-									</li>
-									<li class="tabs-account__item tabs-account__item_warning">
-										Запрещена регистрация и оплата по своим же ссылкам. За это - бан всех аккаунтов без выплат.
-									</li>
-									<li class="tabs-account__item tabs-account__item_warning">
-										Запрещено рекламировать сервис брендовыми запросами: Telemetr, Telemetr.me, Телеметр.
-									</li>
-								</ul>
+								<div class="tabs-account__body-hasBg">
+									<p class="text">
+										Наш сервис предлагает вам зарабатывать вместе с нами! <br> Основные правила и
+										принципы реферальной программы просты:
+									</p>
+									<ul class="tabs-account__list">
+										<li class="tabs-account__item tabs-account__item_ok">
+											Вы будете получать 10% от суммы трат пользователей, зарегистрировавшихся по
+											вашим реферальным ссылкам, на продление доступа.
+										</li>
+										<li class="tabs-account__item tabs-account__item_ok">
+											При условии хорошего количества оплат от вас мы можем увеличить ваш процент.
+											Все
+											условия индивидуальны и обсуждаются через поддержку.
+										</li>
+										<li class="tabs-account__item tabs-account__item_ok">
+											Как только пользователь регистрируется по вашей ссылке, он будет закреплен
+											за
+											вами навсегда - и вы будете получать свою комиссию с каждой оплаты
+											пользователя
+											за продление доступа к сервису.
+										</li>
+										<li class="tabs-account__item tabs-account__item_warning">
+											Запрещен спам в любых его проявлениях. За это - бан всего аккаунта без
+											выплат.
+										</li>
+										<li class="tabs-account__item tabs-account__item_warning">
+											Запрещена регистрация и оплата по своим же ссылкам. За это - бан всех
+											аккаунтов
+											без выплат.
+										</li>
+										<li class="tabs-account__item tabs-account__item_warning">
+											Запрещено рекламировать сервис брендовыми запросами: Telemetr, Telemetr.me,
+											Телеметр.
+										</li>
+									</ul>
+								</div>
+								<div class="account-table">
+									<div class="account-table__list account-table__list-noBg">
+										<table class="table search-channels__table">
+											<thead>
+												<tr class="tabs__account-head-column">
+													<th scope="col">
+														<div class="label-black text-center">Ссылка</div>
+													</th>
+													<th scope="col">
+														<div class="label-black text-center">Регистраций</div>
+													</th>
+													<th scope="col">
+														<div class="label-black text-center">Оплат</div>
+													</th>
+													<th scope="col">
+														<div class="label-black text-center">Комиссия</div>
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<form action="#" method="POST" class="link-form">
+															<div class="search-form__item">
+																<input type="text" id="link-gen" name="link-gen"
+																	placeholder="https://stattron.me/r/EwtQHe5/"
+																	class="form__input">
+															</div>
+														</form>
+													</td>
+													<td>
+														<div class="label-black">10</div>
+													</td>
+													<td>
+														<div class="label-black">2</div>
+													</td>
+													<td>
+														<div class="label-black">0</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<form action="#" method="POST" class="link-form">
+															<div class="search-form__item">
+																<input type="text" id="link-gen" name="link-gen"
+																	placeholder="https://stattron.me/r/EwtQHe5/"
+																	class="form__input">
+																<!-- <button class="button" type="submit">Сгенерировать
+																		еще одну
+																		ссылку</button> -->
+															</div>
+														</form>
+													</td>
+													<td>
+														<div class="label-black">2</div>
+													</td>
+													<td>
+														<div class="label-black">2</div>
+													</td>
+													<td>
+														<div class="label-black">0</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
 							</div>
-							<div class="tabs-account__body">
-								Содержимое второго таба
+							<div class="tabs-account__body balans-tab">
+								<div class="tabs-account__offer-amount">
+									<form action="" class="tabs-account__form form">
+										<label for="tabs-account__offer-amount-field">
+											Введите сумму для заказа выплаты:
+										</label>
+										<div class="tabs__account-body-box">
+											<input type="text" name="tabs-account__offer-amount-field"
+												id="tabs-account__offer-amount-field" class="form__input">
+											<button class="button tabs-account__offer-amount-btn">Заказать</button>
+										</div>
+									</form>
+								</div>
+								<div class="analitics-tabs__table-wrap-container">
+									<table class="table search-channels__table">
+										<thead>
+											<tr class="tabs__account-head-column">
+												<th scope="col">
+													<div class="label-black">Дата и время:</div>
+												</th>
+												<th scope="col">
+													<div class="label-black">Сумма:</div>
+												</th>
+												<th scope="col">
+													<div class="label-black">Кошелек:</div>
+												</th>
+												<th scope="col">
+													<div class="label-black">Статус:</div>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td scope="row">
+													<div class="tabs__account-date-time">
+														<span>11.02.2024</span>
+														<span>11:23:12</span>
+													</div>
+												</td>
+												<td>
+													<div class="label-green label-green_s20">+233 000</div>
+												</td>
+												<td>
+													<div class="label-blue label-blue_s20">+7 326 256 54 54</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="tabs__account-date-time">
+														<span>11.02.2024</span>
+														<span>11:23:12</span>
+													</div>
+												</td>
+												<td>
+													<div class="label-green label-green_s20">+233 000</div>
+												</td>
+												<td>
+													<div class="label-blue label-blue_s20">+7 326 256 54 54</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button status__fail"
+														type="button">Отменено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="tabs__account-date-time">
+														<span>11.02.2024</span>
+														<span>11:23:12</span>
+													</div>
+												</td>
+												<td>
+													<div class="label-green label-green_s20">+233 000</div>
+												</td>
+												<td>
+													<div class="label-blue label-blue_s20">+7 326 256 54 54</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="tabs__account-date-time">
+														<span>11.02.2024</span>
+														<span>11:23:12</span>
+													</div>
+												</td>
+												<td>
+													<div class="label-green label-green_s20">+233 000</div>
+												</td>
+												<td>
+													<div class="label-blue label-blue_s20">+7 326 256 54 54</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="tabs__account-date-time">
+														<span>11.02.2024</span>
+														<span>11:23:12</span>
+													</div>
+												</td>
+												<td>
+													<div class="label-green label-green_s20">+233 000</div>
+												</td>
+												<td>
+													<div class="label-blue label-blue_s20">+7 326 256 54 54</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="tabs__account-date-time">
+														<span>11.02.2024</span>
+														<span>11:23:12</span>
+													</div>
+												</td>
+												<td>
+													<div class="label-green label-green_s20">+233 000</div>
+												</td>
+												<td>
+													<div class="label-blue label-blue_s20">+7 326 256 54 54</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="tabs__account-date-time">
+														<span>11.02.2024</span>
+														<span>11:23:12</span>
+													</div>
+												</td>
+												<td>
+													<div class="label-green label-green_s20">+233 000</div>
+												</td>
+												<td>
+													<div class="label-blue label-blue_s20">+7 326 256 54 54</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
-							<div class="tabs-account__body">
-								Содержимое третьего таба
+							<div class="tabs-account__body history-tab">
+								<div class="analitics-tabs__table-wrap-container">
+									<table class="table search-channels__table">
+										<thead>
+											<tr class="tabs__account-head-column">
+												<th scope="col">
+													<div class="label-black">Дата:</div>
+												</th>
+												<th scope="col">
+													<div class="label-black text-left">Время:</div>
+												</th>
+												<th scope="col">
+													<div class="label-black">Описание:</div>
+												</th>
+												<th scope="col">
+													<div class="label-black">Статус:</div>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td scope="row">
+													<div class="label-black text-left">11.02.2024</div>
+												</td>
+												<td>
+													<div class="label-black text-left">11:23:13</div>
+												</td>
+												<td>
+													<div class="label-black">Оплата доступа к сервису на 3 месяца</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="label-black text-left">11.02.2024</div>
+												</td>
+												<td>
+													<div class="label-black text-left">11:23:13</div>
+												</td>
+												<td>
+													<div class="label-black">Оплата доступа к сервису на 3 месяца</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button status__fail"
+														type="button">Отменено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="label-black text-left">11.02.2024</div>
+												</td>
+												<td>
+													<div class="label-black text-left">11:23:13</div>
+												</td>
+												<td>
+													<div class="label-black">Оплата доступа к сервису на 3 месяца</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button status__fail"
+														type="button">Отменено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="label-black text-left">11.02.2024</div>
+												</td>
+												<td>
+													<div class="label-black text-left">11:23:13</div>
+												</td>
+												<td>
+													<div class="label-black">Оплата доступа к сервису на 3 месяца</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="label-black text-left">11.02.2024</div>
+												</td>
+												<td>
+													<div class="label-black text-left">11:23:13</div>
+												</td>
+												<td>
+													<div class="label-black">Оплата доступа к сервису на 3 месяца</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="label-black text-left">11.02.2024</div>
+												</td>
+												<td>
+													<div class="label-black text-left">11:23:13</div>
+												</td>
+												<td>
+													<div class="label-black">Оплата доступа к сервису на 3 месяца</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">
+													<div class="label-black text-left">11.02.2024</div>
+												</td>
+												<td>
+													<div class="label-black text-left">11:23:13</div>
+												</td>
+												<td>
+													<div class="label-black">Оплата доступа к сервису на 3 месяца</div>
+												</td>
+												<td class="text-right">
+													<button class="status__button" type="button">Выполнено</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="account-table">
-				<div class="account-table__container">
-					<div class="account-table__item">
-						<h4 class="label-black">Ссылка</h4>
-						<form action="#" method="POST" class="link-form">
-							<div class="search-form__item">
-								<input type="text" id="link-gen" name="link-gen" placeholder="https://stattron.me/r/EwtQHe5/" class="form__input">
-								<button class="button" type="submit">Сгенерировать еще одну ссылку</button>
-							</div>
-						</form>
-					</div>
-					<div class="account-table__list">
-						<div class="account-table__item">
-							<h4 class="label-black">Регистраций</h4>
-						</div>
-						<div class="account-table__item">
-							<h4 class="label-black">Оплат</h4>
-						</div>
-						<div class="account-table__item">
-							<h4 class="label-black">Комиссия</h4>
 						</div>
 					</div>
 				</div>
@@ -553,16 +879,21 @@
 				</button>
 				<div class="popup__inner">
 					<div class="tabs-navigation popup__filters">
-						<button class="search-channels__num tabs-navigation__title _tab-active" type="button">По дате</button>
+						<button class="search-channels__num tabs-navigation__title _tab-active" type="button">По
+							дате</button>
 						<button class="search-channels__num tabs-navigation__title" type="button">По просмотрам</button>
 						<button class="search-channels__num tabs-navigation__title" type="button">По пересылкам</button>
-						<button class="search-channels__num tabs-navigation__title" type="button">По комментариям</button>
+						<button class="search-channels__num tabs-navigation__title" type="button">По
+							комментариям</button>
 					</div>
 					<div class="popup__list">
 						<div class="item-popup">
 							<div class="item-popup__head">
 								<div class="item-popup__img">
-									<picture><source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid" src="img/channels/7.png" alt=""></picture>
+									<picture>
+										<source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid"
+											src="img/channels/7.png" alt="">
+									</picture>
 								</div>
 								<div class="item-popup__content">
 									<div class="label_black">young 💸Trader💸</div>
@@ -597,14 +928,20 @@
 								</div>
 							</div>
 							<button class="item-popup__btn button button_no-bg" type="button">
-								<picture><source srcset="img/icons/icon-img.webp" type="image/webp"><img src="img/icons/icon-img.png" alt=""></picture>
+								<picture>
+									<source srcset="img/icons/icon-img.webp" type="image/webp"><img
+										src="img/icons/icon-img.png" alt="">
+								</picture>
 								Изображение
 							</button>
 						</div>
 						<div class="item-popup">
 							<div class="item-popup__head">
 								<div class="item-popup__img">
-									<picture><source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid" src="img/channels/7.png" alt=""></picture>
+									<picture>
+										<source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid"
+											src="img/channels/7.png" alt="">
+									</picture>
 								</div>
 								<div class="item-popup__content">
 									<div class="label_black">young 💸Trader💸</div>
@@ -639,14 +976,20 @@
 								</div>
 							</div>
 							<button class="item-popup__btn button button_no-bg" type="button">
-								<picture><source srcset="img/icons/icon-img.webp" type="image/webp"><img src="img/icons/icon-img.png" alt=""></picture>
+								<picture>
+									<source srcset="img/icons/icon-img.webp" type="image/webp"><img
+										src="img/icons/icon-img.png" alt="">
+								</picture>
 								Изображение
 							</button>
 						</div>
 						<div class="item-popup">
 							<div class="item-popup__head">
 								<div class="item-popup__img">
-									<picture><source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid" src="img/channels/7.png" alt=""></picture>
+									<picture>
+										<source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid"
+											src="img/channels/7.png" alt="">
+									</picture>
 								</div>
 								<div class="item-popup__content">
 									<div class="label_black">young 💸Trader💸</div>
@@ -681,7 +1024,10 @@
 								</div>
 							</div>
 							<button class="item-popup__btn button button_no-bg" type="button">
-								<picture><source srcset="img/icons/icon-img.webp" type="image/webp"><img src="img/icons/icon-img.png" alt=""></picture>
+								<picture>
+									<source srcset="img/icons/icon-img.webp" type="image/webp"><img
+										src="img/icons/icon-img.png" alt="">
+								</picture>
 								Изображение
 							</button>
 						</div>

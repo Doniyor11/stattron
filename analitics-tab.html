@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Stattron | Аналитика канала</title>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <!-- <style>body{opacity: 0;}</style> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20240120112629"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.min.css?_v=20240120112629">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- <meta name="robots" content="noindex, nofollow"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__column">
+        <a href="home.html" class="header__logo">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp">
+            <img class="img-fluid logo-desc"
+                 src="img/logo.png" alt="">
+          </picture>
+          <picture>
+            <source srcset="img/logo_mob.webp" type="image/webp">
+            <img class="img-fluid logo-mob"
+                 src="img/logo_mob.png" alt="">
+          </picture>
+        </a>
+        <form action="#" class="header__search" method="POST">
+          <input placeholder="Поиск..." class="header__input" type="text">
+          <button class="header__search-btn" type="submit">
+            <img class="img-fluid" src="img/icons/search.svg" alt="">
+          </button>
+        </form>
+      </div>
+      <div class="header__column header__column_account">
+        <div data-da=".header__container,767.98" data-dropdown class="header__dropdown dropdown-header">
+          <button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+            <div class="dropdown-header__btn dropdown-header__btn_desc">
+              <span>Сервисы</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </div>
+            <div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+              <span></span>
+            </div>
+          </button>
+          <div class="dropdown-header__list dropdown-header__list_account">
+            <!-- <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+          <span></span>
+<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+        </a>
+        <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+          <span>Регистрация</span>
+<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+        </a> -->
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/1.svg" alt="">
+									Каталог каналов
+								</span>
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/2.svg" alt="">
+									Поиск постов
+								</span>
+            </a>
+            <a href="#" class="dropdown-header__item item-type-1">
+								<span>
+									<img src="img/header/3.svg" alt="">
+									Отслеживание постов
+								</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <ul class="dropdown-header__sublist">
+              <li>
+                <a class="dropdown-header__sublist-link" href="#">Рекламные посты</a>
+              </li>
+              <li>
+                <a class="dropdown-header__sublist-link" href="#">Посты в закладках</a>
+              </li>
+              <li>
+                <a class="dropdown-header__sublist-link" href="#">Все посты</a>
+              </li>
+            </ul>
+            <a href="#" class="dropdown-header__item item-type-1">
+								<span>
+									<img src="img/header/4.svg" alt="">
+									Мои каналы
+								</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/5.svg" alt="">
+									Анализ аудитории
+								</span>
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/6.svg" alt="">
+									Telegraph-статьи
+								</span>
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/7.svg" alt="">
+									Детальная статистика
+								</span>
+            </a>
+
+            <button type="button" class="dropdown-header__option">Включить ночную тему</button>
+          </div>
+        </div>
+        <div data-da=".header__container,767.98" data-dropdown
+             class="header__dropdown dropdown-header dropdown-header_tablet-dn">
+          <button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+            <div class="dropdown-header__btn dropdown-header__btn_desc">
+              <span>Демо-доступ</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </div>
+            <div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+              <span></span>
+            </div>
+          </button>
+          <div class="dropdown-header__list">
+            <div class="subscribe-window">
+              <h2 class="subscribe-window__title">Бесплатный режим</h2>
+              <p class="subscribe-window__text">
+                У вас ограничен функционал !
+              </p>
+              <p class="subscribe-window__text">
+                Для улучшения возможностей аккаунта,
+                приобретите подписку на сервис.
+              </p>
+              <a href="#" class="button subscribe-window__btn">
+                Оформить подписку
+              </a>
+            </div>
+          </div>
+        </div>
+        <div data-da=".header__container,767.98" data-dropdown
+             class="header__dropdown dropdown-header dropdown-header_tablet-dn">
+          <button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+            <div class="dropdown-header__btn dropdown-header__btn_desc">
+              <span>Баланс</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </div>
+            <div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+              <span></span>
+            </div>
+          </button>
+          <div class="dropdown-header__list">
+            <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+              <span></span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+              <span>Регистрация</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/1.svg" alt="">
+									Каталог каналов
+								</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/2.svg" alt="">
+									Поиск постов
+								</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/3.svg" alt="">
+									Отслеживание постов
+								</span>
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/4.svg" alt="">
+									Мои каналы
+								</span>
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/5.svg" alt="">
+									Анализ аудитории
+								</span>
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/6.svg" alt="">
+									Telegraph-статьи
+								</span>
+            </a>
+            <a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/7.svg" alt="">
+									Детальная статистика
+								</span>
+            </a>
+
+            <button type="button" class="dropdown-header__option">Включить ночную тему</button>
+          </div>
+        </div>
+        <div data-dropdown class="header__dropdown dropdown-header dropdown-header-lang">
+          <button data-dropdown-btn class="dropdown-header__btn" type="button">
+            <span>Ru</span>
+            <img class="arrow" src="img/icons/arrow-down.svg" alt="">
+          </button>
+          <div class="dropdown-header-lang__list dropdown-header__list dropdown-header__list_lang">
+            <a href="#" class="dropdown-header-lang__item">En</a>
+            <a href="#" class="dropdown-header-lang__item">De</a>
+          </div>
+        </div>
+        <div data-da=".header__container,767.98" data-dropdown
+             class="header__dropdown dropdown-header dropdown-header_mobi-dn">
+          <button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+            <div class="dropdown-header__btn dropdown-header__btn_desc">
+              <picture>
+                <source srcset="img/account/1.webp" type="image/webp">
+                <img
+                    class="dropdown-header__avatar" src="img/account/1.png" alt="">
+              </picture>
+              <img class="dropdown-header__icon arrow" src="img/icons/arrow-down.svg" alt="">
+            </div>
+            <div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+              <span></span>
+            </div>
+          </button>
+          <div class="dropdown-header__list dropdown-header__list_account">
+            <div class="dropdown-header__head">
+              <a href="#" class="dropdown-header__head-avatar">
+                <picture>
+                  <source srcset="img/account/1.webp" type="image/webp">
+                  <img class="img-fluid"
+                       src="img/account/1.png" alt="">
+                </picture>
+              </a>
+              <div class="dropdown-header__head-content">
+                <div class="dropdown-header__head-email">nikitalarionov2001@mail.ru</div>
+                <div class="dropdown-header__head-status label-red">Демо-доступ</div>
+                <!-- <div class="dropdown-header__head-status label-green">Премиум-доступ</div> -->
+              </div>
+            </div>
+            <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>
+									<img src="img/header-icons/1.svg" alt="">
+									Профиль
+								</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>
+									<img src="img/header-icons/2.svg" alt="">
+									Реф.баланс: 0 руб.
+								</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>
+									<img src="img/header-icons/3.svg" alt="">
+									Поддержка
+								</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>
+									<img src="img/header-icons/4.svg" alt="">
+									<span class="color-red">Продление доступа</span>
+								</span>
+              <img src="img/icons/arrow-down.svg" class="arrow" alt="">
+            </a>
+            <div class="dropdown-header__bottom">
+              <button type="button" class="dropdown-header__option">Включить ночную тему</button>
+              <button class="button" type="button">Выйти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page">
+    <section class="account-tabs analitics-tabs">
+      <div class="account-tabs__container">
+        <div data-tabs class="channels-tabs tabs-account">
+          <div class="tabs-account__head">
+            <nav data-tabs-titles class="tabs-navigation tabs-account__navigation">
+              <button type="button" class="tabs-navigation__title _tab-active">
+                <img class="grey" src="img/analitics/tabs/1_grey.svg" alt="">
+                <img class="black" src="img/analitics/tabs/1_black.svg" alt="">
+                Статистика
+              </button>
+              <button type="button" class="tabs-navigation__title">
+                <img class="grey" src="img/analitics/tabs/2_grey.svg" alt="">
+                <img class="black" src="img/analitics/tabs/2_black.svg" alt="">
+                Рекламная отдача
+              </button>
+              <button type="button" class="tabs-navigation__title">
+                <img class="grey" src="img/analitics/tabs/3_grey.svg" alt="">
+                <img class="black" src="img/analitics/tabs/3_black.svg" alt="">
+                Динамика
+              </button>
+              <button type="button" class="tabs-navigation__title">
+                <img class="grey" src="img/analitics/tabs/4_grey.svg" alt="">
+                <img class="black" src="img/analitics/tabs/4_black.svg" alt="">
+                Аудитория
+              </button>
+              <button type="button" class="tabs-navigation__title">
+                <img class="grey" src="img/analitics/tabs/5_grey.svg" alt="">
+                <img class="black" src="img/analitics/tabs/5_black.svg" alt="">
+                Просмотры постов
+              </button>
+            </nav>
+          </div>
+          <div data-tabs-body class="analitics-tabs__content">
+            <div class="analitics-tabs__body">
+              <div class="analitics-tabs__main main-analitics">
+                <div class="main-analitics__info">
+                  <a href="#" class="main-analitics__avatar">
+                    <picture>
+                      <source srcset="img/analitics/avatar.webp" type="image/webp">
+                      <img
+                          class="img-fluid" src="img/analitics/avatar.png" alt="">
+                    </picture>
+                    <div class="main-analitics__degree">
+                      <img class="main-analitics__mark" src="img/analitics/mark.png" alt="">
+                      <span class="main-analitics__degree-number">#1</span>
+                    </div>
+                  </a>
+                  <div class="main-analitics__content">
+                    <div class="main-analitics__content-top">
+                      <h1 class="main-analitics__title title title_w500">
+                        Telegram Tips
+                        <picture>
+                          <source srcset="img/analitics/success.webp" type="image/webp">
+                          <img src="img/analitics/success.png" alt="">
+                        </picture>
+                        <img src="img/icons/copy.svg" alt="">
+                      </h1>
+                      <button class="main-analitics__content-followBtn">Follow</button>
+                    </div>
+                    <p class="text">
+                      Telegram stands for freedom and privacy and has many easy to use
+                      features.
+                    </p>
+                  </div>
+                </div>
+                <div class="main-analitics__actions">
+                  <div class="main-analitics__actions-top">
+                    <button class="main-analitics__btn-wrap title title_s20" type="button">
+                      <div class="main-analitics__btn">
+                        <img src="img/analitics/search.svg" alt="">
+                        <span>Рекламные посты</span>
+                      </div>
+                    </button>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/repost.svg" alt="">
+                        <span>Упоминания</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/posts.svg" alt="">
+                        <span>Все посты</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <form action="#" method="POST" class="main-analitics__form">
+                    <input class="main-analitics__input" type="text" name="note" id="note"
+                           placeholder="Вы можете оставить заметку. Она будет видна только вам.">
+                    <button class="button button_no-bg" type="submit">Сохранить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="analitics-tabs__body">
+              <div class="analitics-tabs__main main-analitics">
+                <div class="main-analitics__info">
+                  <a href="#" class="main-analitics__avatar">
+                    <picture>
+                      <source srcset="img/analitics/avatar.webp" type="image/webp">
+                      <img
+                          class="img-fluid" src="img/analitics/avatar.png" alt="">
+                    </picture>
+                    <div class="main-analitics__degree">
+                      <img class="main-analitics__mark" src="img/analitics/mark.png" alt="">
+                      <span class="main-analitics__degree-number">#1</span>
+                    </div>
+                  </a>
+                  <div class="main-analitics__content">
+                    <div class="main-analitics__content-top">
+                      <h1 class="main-analitics__title title title_w500">
+                        Telegram Tips
+                        <picture>
+                          <source srcset="img/analitics/success.webp" type="image/webp">
+                          <img src="img/analitics/success.png" alt="">
+                        </picture>
+                        <img src="img/icons/copy.svg" alt="">
+                      </h1>
+                      <button class="main-analitics__content-followBtn">Follow</button>
+                    </div>
+                    <p class="text">
+                      Telegram stands for freedom and privacy and has many easy to use
+                      features.
+                    </p>
+                  </div>
+                </div>
+                <div class="main-analitics__actions">
+                  <div class="main-analitics__actions-top">
+                    <button class="main-analitics__btn-wrap title title_s20" type="button">
+                      <div class="main-analitics__btn">
+                        <img src="img/analitics/search.svg" alt="">
+                        <span>Рекламные посты</span>
+                      </div>
+                    </button>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/repost.svg" alt="">
+                        <span>Упоминания</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/posts.svg" alt="">
+                        <span>Все посты</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <form action="#" method="POST" class="main-analitics__form">
+                    <input class="main-analitics__input" type="text" name="note" id="note"
+                           placeholder="Вы можете оставить заметку. Она будет видна только вам.">
+                    <button class="button button_no-bg" type="submit">Сохранить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="analitics-tabs__body">
+              <div class="analitics-tabs__main main-analitics">
+                <div class="main-analitics__info">
+                  <a href="#" class="main-analitics__avatar">
+                    <picture>
+                      <source srcset="img/analitics/avatar.webp" type="image/webp">
+                      <img
+                          class="img-fluid" src="img/analitics/avatar.png" alt="">
+                    </picture>
+                    <div class="main-analitics__degree">
+                      <img class="main-analitics__mark" src="img/analitics/mark.png" alt="">
+                      <span class="main-analitics__degree-number">#1</span>
+                    </div>
+                  </a>
+                  <div class="main-analitics__content">
+                    <div class="main-analitics__content-top">
+                      <h1 class="main-analitics__title title title_w500">
+                        Telegram Tips
+                        <picture>
+                          <source srcset="img/analitics/success.webp" type="image/webp">
+                          <img src="img/analitics/success.png" alt="">
+                        </picture>
+                        <img src="img/icons/copy.svg" alt="">
+                      </h1>
+                      <button class="main-analitics__content-followBtn">Follow</button>
+                    </div>
+                    <p class="text">
+                      Telegram stands for freedom and privacy and has many easy to use
+                      features.
+                    </p>
+                  </div>
+                </div>
+                <div class="main-analitics__actions">
+                  <div class="main-analitics__actions-top">
+                    <button class="main-analitics__btn-wrap title title_s20" type="button">
+                      <div class="main-analitics__btn">
+                        <img src="img/analitics/search.svg" alt="">
+                        <span>Рекламные посты</span>
+                      </div>
+                    </button>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/repost.svg" alt="">
+                        <span>Упоминания</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/posts.svg" alt="">
+                        <span>Все посты</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <form action="#" method="POST" class="main-analitics__form">
+                    <input class="main-analitics__input" type="text" name="note" id="note"
+                           placeholder="Вы можете оставить заметку. Она будет видна только вам.">
+                    <button class="button button_no-bg" type="submit">Сохранить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="analitics-tabs__body">
+              <div class="analitics-tabs__main main-analitics">
+                <div class="main-analitics__info">
+                  <a href="#" class="main-analitics__avatar">
+                    <picture>
+                      <source srcset="img/analitics/avatar.webp" type="image/webp">
+                      <img
+                          class="img-fluid" src="img/analitics/avatar.png" alt="">
+                    </picture>
+                    <div class="main-analitics__degree">
+                      <img class="main-analitics__mark" src="img/analitics/mark.png" alt="">
+                      <span class="main-analitics__degree-number">#1</span>
+                    </div>
+                  </a>
+                  <div class="main-analitics__content">
+                    <div class="main-analitics__content-top">
+                      <h1 class="main-analitics__title title title_w500">
+                        Telegram Tips
+                        <picture>
+                          <source srcset="img/analitics/success.webp" type="image/webp">
+                          <img src="img/analitics/success.png" alt="">
+                        </picture>
+                        <img src="img/icons/copy.svg" alt="">
+                      </h1>
+                      <button class="main-analitics__content-followBtn">Follow</button>
+                    </div>
+                    <p class="text">
+                      Telegram stands for freedom and privacy and has many easy to use
+                      features.
+                    </p>
+                  </div>
+                </div>
+                <div class="main-analitics__actions">
+                  <div class="main-analitics__actions-top">
+                    <button class="main-analitics__btn-wrap title title_s20" type="button">
+                      <div class="main-analitics__btn">
+                        <img src="img/analitics/search.svg" alt="">
+                        <span>Рекламные посты</span>
+                      </div>
+                    </button>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/repost.svg" alt="">
+                        <span>Упоминания</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/posts.svg" alt="">
+                        <span>Все посты</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <form action="#" method="POST" class="main-analitics__form">
+                    <input class="main-analitics__input" type="text" name="note" id="note"
+                           placeholder="Вы можете оставить заметку. Она будет видна только вам.">
+                    <button class="button button_no-bg" type="submit">Сохранить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="analitics-tabs__body">
+              <div class="analitics-tabs__main main-analitics">
+                <div class="main-analitics__info">
+                  <a href="#" class="main-analitics__avatar">
+                    <picture>
+                      <source srcset="img/analitics/avatar.webp" type="image/webp">
+                      <img
+                          class="img-fluid" src="img/analitics/avatar.png" alt="">
+                    </picture>
+                    <div class="main-analitics__degree">
+                      <img class="main-analitics__mark" src="img/analitics/mark.png" alt="">
+                      <span class="main-analitics__degree-number">#1</span>
+                    </div>
+                  </a>
+                  <div class="main-analitics__content">
+                    <div class="main-analitics__content-top">
+                      <h1 class="main-analitics__title title title_w500">
+                        Telegram Tips
+                        <picture>
+                          <source srcset="img/analitics/success.webp" type="image/webp">
+                          <img src="img/analitics/success.png" alt="">
+                        </picture>
+                        <img src="img/icons/copy.svg" alt="">
+                      </h1>
+                      <button class="main-analitics__content-followBtn">Follow</button>
+                    </div>
+                    <p class="text">
+                      Telegram stands for freedom and privacy and has many easy to use
+                      features.
+                    </p>
+                  </div>
+                </div>
+                <div class="main-analitics__actions">
+                  <div class="main-analitics__actions-top">
+                    <button class="main-analitics__btn-wrap title title_s20" type="button">
+                      <div class="main-analitics__btn">
+                        <img src="img/analitics/search.svg" alt="">
+                        <span>Рекламные посты</span>
+                      </div>
+                    </button>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/repost.svg" alt="">
+                        <span>Упоминания</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="main-analitics__btn-wrap title title_s20">
+                      <button class="main-analitics__btn" type="button">
+                        <img src="img/analitics/posts.svg" alt="">
+                        <span>Все посты</span>
+                      </button>
+                      <button class="main-analitics__btn-icon" title="Быстрый просмотр"
+                              type="button">
+                        <img class="grey" src="img/icons/eye.svg" alt="">
+                        <img class="black" src="img/icons/eye_black.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <form action="#" method="POST" class="main-analitics__form">
+                    <input class="main-analitics__input" type="text" name="note" id="note"
+                           placeholder="Вы можете оставить заметку. Она будет видна только вам.">
+                    <button class="button button_no-bg" type="submit">Сохранить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="plans__boxes analitics_info_wrapper">
+            <div class="plans__box-blue">
+              <div class="plans__box-flex">
+                <h3 class="plans__box-title">Для получения полной информации,
+                  приобретите Premium !</h3>
+              </div>
+              <div class="plans__box-row">
+                <img src="img/icons/mingcute_switch-fill.png" alt="" class="plans__box-image">
+                <div>
+                  <p class="plans__box-whiteText">
+                    Получите подробную информацию о каждом канале
+                  </p>
+                  <p class="plans__box-grayText">
+                    Отберите самые эффективные каналы для
+                    Отберите самые эффективные каналы для
+                    рекламных размещений, по приросту подписчиков,
+                    ER, количеству просмотров на пост и другим метрикам
+                  </p>
+                </div>
+              </div>
+              <div class="plans__box-row">
+                <img src="img/icons/ph_pulse-fill.png" alt="" class="plans__box-image">
+                <div>
+                  <p class="plans__box-whiteText">
+                    Анализируйте рекламные посты
+                    и креативы
+                  </p>
+                  <p class="plans__box-grayText">
+                    Узнайте какие посты лучше сработали,
+                    а какие хуже, даже если их давно удалили
+                  </p>
+                </div>
+              </div>
+              <div class="plans__box-row">
+                <img src="img/icons/solar_chart.png" alt="" class="plans__box-image">
+                <div>
+                  <p class="plans__box-whiteText">
+                    Оценивайте эффективность тематики и контента
+                  </p>
+                  <p class="plans__box-grayText">
+                    Узнайте, какую тематику лучше не рекламировать
+                    на канале, а какая зайдет на ура
+                  </p>
+                </div>
+              </div>
+              <button class="button button_no-bg button_analytics" type="submit"
+                      style="background-color: #fff; width: 40%; height: 60px; ">Подключить
+              </button>
+            </div>
+            <div class="analitics-tabs__col">
+              <div class="analitics-tabs__item item-subs-analitics">
+                <h4 class="title">Подписчиков</h4>
+                <div class="item-subs-analitics__row-col">
+                  <div class="item-subs-analitics__row-col-item">
+                    <div class="label-black">Всего</div>
+                    <div class="label-blue label-blue_s24">8'575'883</div>
+                  </div>
+                  <div class="item-subs-analitics__row-col-item">
+                    <div class="label-black">Сегодня</div>
+                    <div class="label-green label-green_s24">+5'916</div>
+                  </div>
+                  <div class="item-subs-analitics__row-col-item">
+                    <div class="label-black">Неделя </div>
+                    <div class="label-green label-green_s24">+35'329</div>
+                  </div>
+                  <div class="item-subs-analitics__row-col-item">
+                    <div class="label-black">Месяц</div>
+                    <div class="label-green label-green_s24">+145'095</div>
+                  </div>
+                </div>
+                <div class="item-subs-analitics__row-inline">
+                  <div class="item-subs-analitics__row-inline-item">
+                    <div class="label-black label-black_s24">Просмотров на пост</div>
+                    <div class="label-blue label-blue_s20">2387956</div>
+                  </div>
+                  <div class="item-subs-analitics__row-inline-item">
+                    <div class="label-black label-black_s20">За последние 24ч</div>
+                    <div class="label-blue label-blue_s20">34500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="analitics-tabs__item item-subs-analitics">
+                <div class="item-subs-analitics__row-inline">
+                  <div class="item-subs-analitics__row-inline-item">
+                    <div class="label-black label-black_s24">ER</div>
+                    <div class="label-blue label-blue_s20">0%</div>
+                  </div>
+                  <div class="item-subs-analitics__row-inline-item">
+                    <div class="label-black label-black_s20">Суточный</div>
+                    <div class="label-blue label-blue_s20">0%</div>
+                  </div>
+                  <div class="item-subs-analitics__row-inline-item">
+                    <div class="label-black label-black_s20">Упоминаний в ТГ</div>
+                    <div class="label-blue label-blue_s20">177/62</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__list">
+        <ul class="footer__list footer__list_sub">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Stattron</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">О проекте</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Напишите нам</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Пользовательское соглашение сервиса Stattron</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Правила пользования</a>
+          </li>
+        </ul>
+        <div data-da=".footer,992.98" class="footer__copy">2019-2022 ©Stattron</div>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Сообщество</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Блог</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Исследование рынка рекламы</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Наш Telegram-канал</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Партнерская программа</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Владельцам каналов</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Отзывы о Telega.in</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">База знаний</a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Помощь</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">FAQ</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Поддержка</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js?_v=20240120112629"></script>
+<script src="js/app.min.js?_v=20240120112629"></script>
+</body>
+
+</html>

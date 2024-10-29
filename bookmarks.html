@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20240120112629" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20240120112629"
+		rel="stylesheet">
 
 	<link rel="stylesheet" href="css/style.min.css?_v=20240120112629">
 	<link rel="shortcut icon" href="favicon.ico">
@@ -20,8 +21,14 @@
 			<div class="header__container">
 				<div class="header__column">
 					<a href="home.html" class="header__logo">
-						<picture><source srcset="img/logo.webp" type="image/webp"><img class="img-fluid logo-desc" src="img/logo.png" alt=""></picture>
-						<picture><source srcset="img/logo_mob.webp" type="image/webp"><img class="img-fluid logo-mob" src="img/logo_mob.png" alt=""></picture>
+						<picture>
+							<source srcset="img/logo.webp" type="image/webp"><img class="img-fluid logo-desc"
+								src="img/logo.png" alt="">
+						</picture>
+						<picture>
+							<source srcset="img/logo_mob.webp" type="image/webp"><img class="img-fluid logo-mob"
+								src="img/logo_mob.png" alt="">
+						</picture>
 					</a>
 					<form action="#" class="header__search" method="POST">
 						<input placeholder="Поиск..." class="header__input" type="text">
@@ -30,11 +37,117 @@
 						</button>
 					</form>
 				</div>
-				<div class="header__column">
+				<div class="header__column header__column_account">
 					<div data-da=".header__container,767.98" data-dropdown class="header__dropdown dropdown-header">
 						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
 							<div class="dropdown-header__btn dropdown-header__btn_desc">
 								<span>Сервисы</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</div>
+							<div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+								<span></span>
+							</div>
+						</button>
+						<div class="dropdown-header__list dropdown-header__list_account">
+							<!-- <a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+						<span></span>
+<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+					</a>
+					<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+						<span>Регистрация</span>
+<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+					</a> -->
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/1.svg" alt="">
+									Каталог каналов
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/2.svg" alt="">
+									Поиск постов
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item item-type-1">
+								<span>
+									<img src="img/header/3.svg" alt="">
+									Отслеживание постов
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<ul class="dropdown-header__sublist">
+								<li>
+									<a class="dropdown-header__sublist-link" href="#">Рекламные посты</a>
+								</li>
+								<li>
+									<a class="dropdown-header__sublist-link" href="#">Посты в закладках</a>
+								</li>
+								<li>
+									<a class="dropdown-header__sublist-link" href="#">Все посты</a>
+								</li>
+							</ul>
+							<a href="#" class="dropdown-header__item item-type-1">
+								<span>
+									<img src="img/header/4.svg" alt="">
+									Мои каналы
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/5.svg" alt="">
+									Анализ аудитории
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/6.svg" alt="">
+									Telegraph-статьи
+								</span>
+							</a>
+							<a href="#" class="dropdown-header__item">
+								<span>
+									<img src="img/header/7.svg" alt="">
+									Детальная статистика
+								</span>
+							</a>
+
+							<button type="button" class="dropdown-header__option">Включить ночную тему</button>
+						</div>
+					</div>
+					<div data-da=".header__container,767.98" data-dropdown
+						class="header__dropdown dropdown-header dropdown-header_tablet-dn">
+						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+							<div class="dropdown-header__btn dropdown-header__btn_desc">
+								<span>Демо-доступ</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</div>
+							<div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+								<span></span>
+							</div>
+						</button>
+						<div class="dropdown-header__list">
+							<div class="subscribe-window">
+								<h2 class="subscribe-window__title">Бесплатный режим</h2>
+								<p class="subscribe-window__text">
+									У вас ограничен функционал !
+								</p>
+								<p class="subscribe-window__text">
+									Для улучшения возможностей аккаунта,
+									приобретите подписку на сервис.
+								</p>
+								<a href="#" class="button subscribe-window__btn">
+									Оформить подписку
+								</a>
+							</div>
+						</div>
+					</div>
+					<div data-da=".header__container,767.98" data-dropdown
+						class="header__dropdown dropdown-header dropdown-header_tablet-dn">
+						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+							<div class="dropdown-header__btn dropdown-header__btn_desc">
+								<span>Баланс</span>
 								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 							</div>
 							<div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
@@ -46,7 +159,7 @@
 								<span></span>
 								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 							</a>
-							<a href="register.html" class="dropdown-header__item dropdown-header__item_icon-right">
+							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
 								<span>Регистрация</span>
 								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 							</a>
@@ -98,21 +211,76 @@
 							<button type="button" class="dropdown-header__option">Включить ночную тему</button>
 						</div>
 					</div>
-					<div class="header__btns">
-						<a href="register.html" class="header__btn button">Регистрация</a>
-						<a data-da=".dropdown-header__item span,767.98" href="sing-in.html" class="header__btn_no-bg">
-							Войти
-							<img src="img/icons/login.svg" alt="">
-						</a>
-					</div>
 					<div data-dropdown class="header__dropdown dropdown-header dropdown-header-lang">
 						<button data-dropdown-btn class="dropdown-header__btn" type="button">
 							<span>Ru</span>
-							<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							<img class="arrow" src="img/icons/arrow-down.svg" alt="">
 						</button>
 						<div class="dropdown-header-lang__list dropdown-header__list dropdown-header__list_lang">
 							<a href="#" class="dropdown-header-lang__item">En</a>
 							<a href="#" class="dropdown-header-lang__item">De</a>
+						</div>
+					</div>
+					<div data-da=".header__container,767.98" data-dropdown
+						class="header__dropdown dropdown-header dropdown-header_mobi-dn">
+						<button data-dropdown-btn class="dropdown-header__btn_wrap" type="button">
+							<div class="dropdown-header__btn dropdown-header__btn_desc">
+								<picture>
+									<source srcset="img/account/1.webp" type="image/webp"><img
+										class="dropdown-header__avatar" src="img/account/1.png" alt="">
+								</picture>
+								<img class="dropdown-header__icon arrow" src="img/icons/arrow-down.svg" alt="">
+							</div>
+							<div class="dropdown-header__btn dropdown-header__btn_mob icon-menu">
+								<span></span>
+							</div>
+						</button>
+						<div class="dropdown-header__list dropdown-header__list_account">
+							<div class="dropdown-header__head">
+								<a href="#" class="dropdown-header__head-avatar">
+									<picture>
+										<source srcset="img/account/1.webp" type="image/webp"><img class="img-fluid"
+											src="img/account/1.png" alt="">
+									</picture>
+								</a>
+								<div class="dropdown-header__head-content">
+									<div class="dropdown-header__head-email">nikitalarionov2001@mail.ru</div>
+									<div class="dropdown-header__head-status label-red">Демо-доступ</div>
+									<!-- <div class="dropdown-header__head-status label-green">Премиум-доступ</div> -->
+								</div>
+							</div>
+							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>
+									<img src="img/header-icons/1.svg" alt="">
+									Профиль
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>
+									<img src="img/header-icons/2.svg" alt="">
+									Реф.баланс: 0 руб.
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>
+									<img src="img/header-icons/3.svg" alt="">
+									Поддержка
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<a href="#" class="dropdown-header__item dropdown-header__item_icon-right">
+								<span>
+									<img src="img/header-icons/4.svg" alt="">
+									<span class="color-red">Продление доступа</span>
+								</span>
+								<img src="img/icons/arrow-down.svg" class="arrow" alt="">
+							</a>
+							<div class="dropdown-header__bottom">
+								<button type="button" class="dropdown-header__option">Включить ночную тему</button>
+								<button class="button" type="button">Выйти</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -125,15 +293,18 @@
 						<div class="search-form__column search-form__column_1">
 							<div class="search-form__item">
 								<label for="search-link" class="label-black">Ссылка:</label>
-								<input type="text" id="search-link" name="search-link" placeholder="https://telemetr.me/channels/" class="form__input">
+								<input type="text" id="search-link" name="search-link"
+									placeholder="https://telemetr.me/channels/" class="form__input">
 							</div>
 							<div class="search-form__item">
 								<label for="search-name" class="label-black">Название канала:</label>
-								<input type="text" id="search-name" name="search-name" placeholder="взлом маркетинга" class="form__input">
+								<input type="text" id="search-name" name="search-name" placeholder="взлом маркетинга"
+									class="form__input">
 							</div>
 							<div class="search-form__item">
 								<label for="search-desc" class="label-black">Описание:</label>
-								<input type="text" id="search-desc" name="search-desc" placeholder="маркетинг" class="form__input">
+								<input type="text" id="search-desc" name="search-desc" placeholder="маркетинг"
+									class="form__input">
 							</div>
 						</div>
 						<div class="search-form__column search-form__column_2">
@@ -141,27 +312,33 @@
 								<label for="form-subs-from" class="label-black">Подписчиков:</label>
 								<div class="search-form__item-content">
 									<label for="orm-subs-from" class="label-black">От</label>
-									<input type="number" id="form-subs-from" name="form-subs-from" placeholder="1000" class="form__input">
+									<input type="number" id="form-subs-from" name="form-subs-from" placeholder="1000"
+										class="form__input">
 									<label for="form-subs-to" class="label-black">До</label>
-									<input type="number" id="form-subs-to" name="form-subs-to" placeholder="1000" class="form__input">
+									<input type="number" id="form-subs-to" name="form-subs-to" placeholder="1000"
+										class="form__input">
 								</div>
 							</div>
 							<div class="search-form__item">
 								<label for="post-visible-from" class="label-black">Просмотров на пост:</label>
 								<div class="search-form__item-content">
 									<label for="post-visible-from" class="label-black">От</label>
-									<input type="number" id="post-visible-from" name="post-visible-from" placeholder="1000" class="form__input">
+									<input type="number" id="post-visible-from" name="post-visible-from"
+										placeholder="1000" class="form__input">
 									<label for="post-visible-from-to" class="label-black">До</label>
-									<input type="number" id="post-visible-from-to" name="post-visible-from-to" placeholder="1000" class="form__input">
+									<input type="number" id="post-visible-from-to" name="post-visible-from-to"
+										placeholder="1000" class="form__input">
 								</div>
 							</div>
 							<div class="search-form__item">
 								<label for="repost-week-from" class="label-black">Упоминаний за неделю:</label>
 								<div class="search-form__item-content">
 									<label for="repost-week-from" class="label-black">От</label>
-									<input type="number" id="repost-week-from" name="repost-week-from" placeholder="1000" class="form__input">
+									<input type="number" id="repost-week-from" name="repost-week-from"
+										placeholder="1000" class="form__input">
 									<label for="repost-week-to" class="label-black">До</label>
-									<input type="number" id="repost-week-to" name="repost-week-to" placeholder="1000" class="form__input">
+									<input type="number" id="repost-week-to" name="repost-week-to" placeholder="1000"
+										class="form__input">
 								</div>
 							</div>
 						</div>
@@ -198,24 +375,29 @@
 										<label for="repost-week-from" class="label-black">Пол аудитории :</label>
 										<div class="search-form__item-content search-form__item-content_sel">
 											<label for="sex-m" class="label-black">M</label>
-											<input type="number" id="sex-m" name="sex-m" placeholder="40%" class="form__input">
+											<input type="number" id="sex-m" name="sex-m" placeholder="40%"
+												class="form__input">
 											<label for="sex-f" class="label-black">Ж</label>
-											<input type="number" id="sex-f" name="sex-f" placeholder="20%" class="form__input">
+											<input type="number" id="sex-f" name="sex-f" placeholder="20%"
+												class="form__input">
 										</div>
 									</div>
 								</div>
 							</div>
-							<div data-da=".search-form__column_2,992.98" class="search-form__item search-form__item_center">
+							<div data-da=".search-form__column_2,992.98"
+								class="search-form__item search-form__item_center">
 								<label for="er-from" class="label-black search-form__label">ER:</label>
 								<div class="search-form__item-content search-form__item-content_center">
 									<label for="er-from" class="label-black">От</label>
-									<input type="number" id="er-from" name="er-from" placeholder="100" class="form__input">
+									<input type="number" id="er-from" name="er-from" placeholder="100"
+										class="form__input">
 									<label for="er-to" class="label-black">До</label>
 									<input type="number" id="er-to" name="er-to" placeholder="1000" class="form__input">
 								</div>
 							</div>
 						</div>
-						<div data-da=".search-form__column_2,992.98" class="search-form__column search-form__column_btn">
+						<div data-da=".search-form__column_2,992.98"
+							class="search-form__column search-form__column_btn">
 							<button class="button" type="submit">Найти каналы</button>
 						</div>
 					</form>
@@ -235,7 +417,8 @@
 								<div class="search-channels__head">
 									<div class="search-channels__tabs-head">
 										<div class="search-channels__nums tabs-navigation">
-											<button class="search-channels__num tabs-navigation__title _tab-active" type="button">1</button>
+											<button class="search-channels__num tabs-navigation__title _tab-active"
+												type="button">1</button>
 										</div>
 										<div class="search-channels__head-text">
 											Найдено <span>2</span> канала
@@ -253,28 +436,36 @@
 													<div class="label-black">Подписчики</div>
 												</th>
 												<th scope="col">
-													<div data-dropdown class="header__dropdown dropdown-header dropdown-header-lang">
-														<button data-dropdown-btn class="dropdown-header__btn" type="button">
+													<div data-dropdown
+														class="header__dropdown dropdown-header dropdown-header-lang">
+														<button data-dropdown-btn class="dropdown-header__btn"
+															type="button">
 															<img src="img/icons/users-filling-black.svg" alt="">
 															<span>Сегодня</span>
 															<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 														</button>
-														<div class="dropdown-header-lang__list dropdown-header__list dropdown-header__list_lang">
+														<div
+															class="dropdown-header-lang__list dropdown-header__list dropdown-header__list_lang">
 															<a href="#" class="dropdown-header-lang__item">Сегодня 1</a>
 															<a href="#" class="dropdown-header-lang__item">Сегодня 2</a>
 														</div>
 													</div>
 												</th>
 												<th scope="col">
-													<div data-dropdown class="header__dropdown dropdown-header dropdown-header-lang">
-														<button data-dropdown-btn class="dropdown-header__btn" type="button">
+													<div data-dropdown
+														class="header__dropdown dropdown-header dropdown-header-lang">
+														<button data-dropdown-btn class="dropdown-header__btn"
+															type="button">
 															<img src="img/icons/eye_black.svg" alt="">
 															<span>На пост/вчера</span>
 															<img src="img/icons/arrow-down.svg" class="arrow" alt="">
 														</button>
-														<div class="dropdown-header-lang__list dropdown-header__list dropdown-header__list_lang">
-															<a href="#" class="dropdown-header-lang__item">На пост/вчера 1</a>
-															<a href="#" class="dropdown-header-lang__item">На пост/вчера 2</a>
+														<div
+															class="dropdown-header-lang__list dropdown-header__list dropdown-header__list_lang">
+															<a href="#" class="dropdown-header-lang__item">На пост/вчера
+																1</a>
+															<a href="#" class="dropdown-header-lang__item">На пост/вчера
+																2</a>
 														</div>
 													</div>
 												</th>
@@ -291,10 +482,14 @@
 												<td scope="row">
 													<div class="channel-tabs-channels__head">
 														<a href="#" target="_blank" class="channel-tabs-channels__img">
-															<picture><source srcset="img/channels/1.webp" type="image/webp"><img class="img-fluid" src="img/channels/1.png" alt=""></picture>
+															<picture>
+																<source srcset="img/channels/1.webp" type="image/webp">
+																<img class="img-fluid" src="img/channels/1.png" alt="">
+															</picture>
 														</a>
 														<div class="channel-tabs-channels__content">
-															<a href="#" class="channel-tabs-channels__title title title_s20">
+															<a href="#"
+																class="channel-tabs-channels__title title title_s20">
 																Принцессы тиндера
 																<img src="img/icons/copy.svg" alt="">
 															</a>
@@ -315,8 +510,10 @@
 												</td>
 												<td>
 													<div class="search-channels__btns">
-														<button class="button button_no-bg" type="button">Описание</button>
-														<button class="button button_no-bg" type="button" data-popup="#popup-content">Контент</button>
+														<button class="button button_no-bg" data-popup="#popup-description"
+															type="button">Описание</button>
+														<button class="button button_no-bg" type="button"
+															data-popup="#popup-content">Контент</button>
 														<button class="button" type="button">Анализ</button>
 													</div>
 												</td>
@@ -325,10 +522,14 @@
 												<td scope="row">
 													<div class="channel-tabs-channels__head">
 														<a href="#" target="_blank" class="channel-tabs-channels__img">
-															<picture><source srcset="img/channels/2.webp" type="image/webp"><img class="img-fluid" src="img/channels/2.png" alt=""></picture>
+															<picture>
+																<source srcset="img/channels/2.webp" type="image/webp">
+																<img class="img-fluid" src="img/channels/2.png" alt="">
+															</picture>
 														</a>
 														<div class="channel-tabs-channels__content">
-															<a href="#" class="channel-tabs-channels__title title title_s20">
+															<a href="#"
+																class="channel-tabs-channels__title title title_s20">
 																TON NFT | Animals Red List
 																<img src="img/icons/copy.svg" alt="">
 															</a>
@@ -349,8 +550,10 @@
 												</td>
 												<td>
 													<div class="search-channels__btns">
-														<button class="button button_no-bg" type="button">Описание</button>
-														<button class="button button_no-bg" type="button" data-popup="#popup-content">Контент</button>
+														<button class="button button_no-bg" data-popup="#popup-description"
+															type="button">Описание</button>
+														<button class="button button_no-bg" type="button"
+															data-popup="#popup-content">Контент</button>
 														<button class="button" type="button">Анализ</button>
 													</div>
 												</td>
@@ -428,6 +631,352 @@
 				</ul>
 			</div>
 		</footer>
+	</div>
+	<div id="popup-content" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img class="img-fluid" src="img/icons/exit.svg" alt="">
+				</button>
+				<div class="popup__inner">
+					<div class="tabs-navigation popup__filters">
+						<button class="search-channels__num tabs-navigation__title _tab-active" type="button">По
+							дате</button>
+						<button class="search-channels__num tabs-navigation__title" type="button">По просмотрам</button>
+						<button class="search-channels__num tabs-navigation__title" type="button">По пересылкам</button>
+						<button class="search-channels__num tabs-navigation__title" type="button">По
+							комментариям</button>
+					</div>
+					<div class="popup__list">
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture>
+										<source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid"
+											src="img/channels/7.png" alt="">
+									</picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">young 💸Trader💸</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture>
+									<source srcset="img/icons/icon-img.webp" type="image/webp"><img
+										src="img/icons/icon-img.png" alt="">
+								</picture>
+								Изображение
+							</button>
+						</div>
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture>
+										<source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid"
+											src="img/channels/7.png" alt="">
+									</picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">young 💸Trader💸</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture>
+									<source srcset="img/icons/icon-img.webp" type="image/webp"><img
+										src="img/icons/icon-img.png" alt="">
+								</picture>
+								Изображение
+							</button>
+						</div>
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture>
+										<source srcset="img/channels/7.webp" type="image/webp"><img class="img-fluid"
+											src="img/channels/7.png" alt="">
+									</picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">young 💸Trader💸</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/eye.svg" alt="">
+											208,704
+										</div>
+									</div>
+								</div>
+								<div class="item-popup__btns">
+									<button class="button button_no-bg" type="button">Упоминания</button>
+									<button class="button button_no-bg" type="button">Рекламные посты</button>
+								</div>
+							</div>
+							<div class="item-popup__content">
+								<div class="label-blue label-blue_s14">2022-03-06 16:07:01</div>
+								<div class="item-popup__text">
+									<p class="text text_fw600">
+										Директор по развитию бизнеса криптобиржи Kraken Дэн Хелд и немного философии:
+									</p>
+									<p class="text">
+										Биткоин — это аполитичные деньги. <br>
+										Это деньги для ваших друзей. <br>
+										Это деньги для ваших врагов. <br>
+										Это деньги для всех" <br>
+									</p>
+								</div>
+							</div>
+							<button class="item-popup__btn button button_no-bg" type="button">
+								<picture>
+									<source srcset="img/icons/icon-img.webp" type="image/webp"><img
+										src="img/icons/icon-img.png" alt="">
+								</picture>
+								Изображение
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-description" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img class="img-fluid" src="img/icons/exit.svg" alt="">
+				</button>
+				<div class="popup__inner">
+					<div class="popup__list">
+						<div class="item-popup">
+							<div class="item-popup__head">
+								<div class="item-popup__img">
+									<picture>
+										<source srcset="img/channels/1.webp" type="image/webp"><img class="img-fluid"
+											src="img/channels/1.png" alt="">
+									</picture>
+								</div>
+								<div class="item-popup__content">
+									<div class="label_black">Принцессы тиндера</div>
+									<div class="item-mainscreen__info">
+										<div class="channel-count item-mainscreen__count label-grey">
+											<img src="img/icons/users-filling.svg" alt="">
+											3,451,556
+										</div>
+									</div>
+								</div>
+								<p class="item-popup__degree">#1 532</p>
+							</div>
+						</div>
+						<div class="item-popup">
+							<div class="item-popup__content">
+								<div class="item-popup__channel-text">
+									<p class="text text_fw600">
+										Описание канала:
+									</p>
+									<p class="text">
+										Описание канала...
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="item-popup__channel-info">
+							<div class="item-popup__channel-infoBox">
+								<p class="item-popup__channel-infoText">Подписчики</p>
+								<h5 class="item-popup__channel-infoData">12,556</h5>
+							</div>
+							<div class="item-popup__channel-infoBox">
+								<p class="item-popup__channel-infoText">Сегодня</p>
+								<h5 class="item-popup__channel-infoData">+129</h5>
+							</div>
+							<div class="item-popup__channel-infoBox">
+								<p class="item-popup__channel-infoText">На пост/вчера</p>
+								<h5 class="item-popup__channel-infoData">10,934</h5>
+							</div>
+							<div class="item-popup__channel-infoBox">
+								<p class="item-popup__channel-infoText">ER</p>
+								<h5 class="item-popup__channel-infoData">19%</h5>
+							</div>
+						</div>
+						<div class="item-popup">
+							<div data-tabs class="charts-tabs">
+								<div class="tabs-head">
+									<h4 class="channels-tabs__title title">Охват публикаций за 24ч / число подписчиков
+									</h4>
+									<nav data-tabs-titles class="tabs-navigation">
+										<button type="button" class="tabs-navigation__title _tab-active">График</button>
+										<button type="button" class="tabs-navigation__title">Таблица</button>
+									</nav>
+								</div>
+								<div data-tabs-body class="charts-tabs__content">
+									<div class="charts-tabs__body">
+										<div class="charts-tabs__chart">
+											<canvas id="chart5"></canvas>
+										</div>
+									</div>
+									<div class="charts-tabs__body">
+										<div class="chars-table__wrap">
+											<table
+												class="table chars-table search-channels__table analitics-tabs__table">
+												<thead>
+													<tr>
+														<th scope="col">
+															<div class="label-black">День</div>
+														</th>
+														<th scope="col">
+															<div class="label-black">Подписчиков</div>
+														</th>
+														<th>
+															<div class="label-black">Охват за 24ч</div>
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">
+															<div class="label-black label-black_s20">2022-04-15</div>
+														</td>
+														<td>
+															<div class="label-blue label-blue_s20">7 564 789</div>
+														</td>
+														<td>
+															<div class="label-green label-green_s20">2 456 786</div>
+														</td>
+													</tr>
+													<tr>
+														<td scope="row">
+															<div class="label-black label-black_s20">2022-04-15</div>
+														</td>
+														<td>
+															<div class="label-blue label-blue_s20">7 564 789</div>
+														</td>
+														<td>
+															<div class="label-green label-green_s20">2 456 786</div>
+														</td>
+													</tr>
+													<tr>
+														<td scope="row">
+															<div class="label-black label-black_s20">2022-04-15</div>
+														</td>
+														<td>
+															<div class="label-blue label-blue_s20">7 564 789</div>
+														</td>
+														<td>
+															<div class="label-green label-green_s20">2 456 786</div>
+														</td>
+													</tr>
+													<tr>
+														<td scope="row">
+															<div class="label-black label-black_s20">2022-04-15</div>
+														</td>
+														<td>
+															<div class="label-blue label-blue_s20">7 564 789</div>
+														</td>
+														<td>
+															<div class="label-green label-green_s20">2 456 786</div>
+														</td>
+													</tr>
+													<tr>
+														<td scope="row">
+															<div class="label-black label-black_s20">2022-04-15</div>
+														</td>
+														<td>
+															<div class="label-blue label-blue_s20">7 564 789</div>
+														</td>
+														<td>
+															<div class="label-green label-green_s20">2 456 786</div>
+														</td>
+													</tr>
+													<tr>
+														<td scope="row">
+															<div class="label-black label-black_s20">2022-04-15</div>
+														</td>
+														<td>
+															<div class="label-blue label-blue_s20">7 564 789</div>
+														</td>
+														<td>
+															<div class="label-green label-green_s20">2 456 786</div>
+														</td>
+													</tr>
+													<tr>
+														<td scope="row">
+															<div class="label-black label-black_s20">2022-04-15</div>
+														</td>
+														<td>
+															<div class="label-blue label-blue_s20">7 564 789</div>
+														</td>
+														<td>
+															<div class="label-green label-green_s20">2 456 786</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js?_v=20240120112629"></script>
 	<script src="js/app.min.js?_v=20240120112629"></script>
