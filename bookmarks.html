@@ -640,12 +640,10 @@
 				</button>
 				<div class="popup__inner">
 					<div class="tabs-navigation popup__filters">
-						<button class="search-channels__num tabs-navigation__title _tab-active" type="button">По
-							дате</button>
-						<button class="search-channels__num tabs-navigation__title" type="button">По просмотрам</button>
-						<button class="search-channels__num tabs-navigation__title" type="button">По пересылкам</button>
-						<button class="search-channels__num tabs-navigation__title" type="button">По
-							комментариям</button>
+						<button class="search-channels__num tabs-navigation__title _tab-active" type="button" onclick="setActiveTab(this)">По дате</button>
+						<button class="search-channels__num tabs-navigation__title" type="button" onclick="setActiveTab(this)">По просмотрам</button>
+						<button class="search-channels__num tabs-navigation__title" type="button" onclick="setActiveTab(this)">По пересылкам</button>
+						<button class="search-channels__num tabs-navigation__title" type="button" onclick="setActiveTab(this)">По комментариям</button>
 					</div>
 					<div class="popup__list">
 						<div class="item-popup">
@@ -980,6 +978,7 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js?_v=20240120112629"></script>
 	<script src="js/app.min.js?_v=20240120112629"></script>
+	<script src="js/custom.js"></script>
 </body>
 
 </html>

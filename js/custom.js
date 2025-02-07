@@ -6,3 +6,11 @@ function toggleIcon(button) {
         icon.src = 'img/tracking-posts/material-symbols_stop.svg';
     }
 }
+
+// bookmarks.html button click event
+
+function setActiveTab(button) {
+    const buttons = document.querySelectorAll('.tabs-navigation__title');
+    buttons.forEach(btn => btn.classList.remove('_tab-active'));
+    button.classList.add('_tab-active');
+}
