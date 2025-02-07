@@ -136,11 +136,9 @@
 									Уведомления будут отправляться на телеграм-аккаунт <a href="" target="_blank" class="text_fw500 hhv-blue">username</a> <button class="button" type="button">Отвязать</button>
 								</p>
 							</div>
-							<div class="btn-wrap">
-
-							</div>
 						</div>
 					</div>
+				</div>
 			</section>
 			<section class="tracking-form">
 				<div class="tracking-form__container">
@@ -213,12 +211,12 @@
 								</td>
 								<td class="text-right">
 									<div>
-										<span>
-											<img src="img/tracking-posts/material-symbols_stop.svg" alt="icon"/>
-										</span>
-										<span>
+										<button onclick="toggleIcon(this)">
+											<img src="img/tracking-posts/material-symbols_stop.svg" alt="icon" class="icon">
+										</button>
+										<button>
 											<img src="img/tracking-posts/material-symbols_delete-outline.svg" alt="icon"/>
-										</span>
+										</button>
 									</div>
 								</td>
 							</tr>
@@ -437,6 +435,7 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js?_v=20240120112629"></script>
 	<script src="js/app.min.js?_v=20240120112629"></script>
+	<script src="js/custom.js"></script>
 </body>
 
 </html>
